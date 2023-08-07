@@ -1,0 +1,134 @@
+# Node.js / NPM
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnp
+.pnp.js
+
+# Compiled output
+/build
+/dist
+/*.js.map
+
+# Logs and debugging
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.vscode/
+.idea/
+*.iml
+
+# Dependency directories
+/jspm_packages/
+/bower_components/
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build artifacts
+build/
+
+# Editor-specific
+*.swo
+*.swp
+*.sublime-workspace
+*.sublime-project
+*.idea
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Thumbnails
+Thumbs.db
+
+# Compiled Binary files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Executables
+*.dmg
+*.lock
+*.out
+
+# Miscellaneous
+*.log
+*.pid
+*.seed
+*.pid.lock
+*.log.*
+*.env
+
+# Local development files
+.idea/
+*.log
+*.log.*
+*.sqlite
+*.sqlite3
+*.hprof
+*.db
+*.ncb
+*.sdf
+*.suo
+*.pdb
+*.idb
+*.obj
+*.pch
+*.exp
+*.ilk
+*.aps
+*.clw
+*.pdb
+*.ipch/
+*.bak
+*.bak.*
+*.~*
+~$*
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Swagger UI
+.swagger-codegen/
+swagger-ui/
+swagger_docs/
+
+# Storybook
+storybook-static/
+.cache/
+
+# Jest snapshots
+/__snapshots__/
+
+# Coverage
+/coverage/
+.nyc_output/
+
+# Output of 'npm pack'
+*.tgz
+
+# ESLint
+/.eslintcache
+.eslintcache
+
+# TypeScript
+/tsconfig.tsbuildinfo
+*.tsbuildinfo
+
+# Prettier
+/prettier.config.js
+
+package-lock.json
