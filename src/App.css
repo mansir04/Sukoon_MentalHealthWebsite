@@ -162,4 +162,25 @@ button span {
   font-size: 14px;
 }
 
+.random-joke-header {
+  margin-top: 70px;
+  background: linear-gradient(454deg, pink, orange);
+  padding: 30px; /* Increased padding for more height */
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Increased height */
+}
 
+blockquote {
+  font-size: 40px; /* Increased font size */
+  align-items: center;
+  text-align: center;
+}
+
+.joke-text{
+  color: black;
+  font-size: 20px;
+  text-decoration: underline;
+}

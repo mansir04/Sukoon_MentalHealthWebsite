@@ -9,7 +9,10 @@ const Layout = () => {
       <div className="content">
         <Outlet />
       </div>
+      <div className="footer-at-bottom">
+      {/* Your main content */}
       <Footer />
+    </div>
     </div>
   );
 };
