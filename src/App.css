@@ -125,3 +125,41 @@ button span {
   color: #cc3852;
   margin-right: 10px;
 }
+
+/* Remove the position and bottom properties from .footer */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* Remove the height: 100% from .footer-content */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+
