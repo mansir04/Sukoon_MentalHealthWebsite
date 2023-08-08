@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Logoslider from '../components/logoslider';
+
 
 const Home = () => {
   const [joke, setJoke] = useState('');
@@ -33,6 +35,7 @@ const Home = () => {
         </blockquote>
       </header>
     </div>
+    <Logoslider/>
     </>
   );
 };
