@@ -22,7 +22,7 @@ class Logoslider extends Component {
     };
     return (
       <div className="mainContainer">
-        <h2>Auto Play</h2>
+        <h2>NGOs WE SUPPORT</h2>
         <Slider {...settings}>
           <div className="container">
             <img src={logo } />

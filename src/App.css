@@ -184,3 +184,61 @@ blockquote {
   font-size: 20px;
   text-decoration: underline;
 }
+
+
+.container-home {
+  padding: 20px;
+}
+
+.content-section-home {
+  display: grid;
+  grid-template-columns: 10fr 500px; /* Adjust the width of the text box */
+  align-items: center;
+  gap: 20px; /* Adjust the gap between columns */
+  margin-bottom: 40px;
+}
+
+.image-container-home {
+  flex: 1;
+  max-width: 400px;
+  margin-right: 20px;
+}
+
+.image-home {
+  width: 180%;
+  height: 150%;
+  object-fit: cover; 
+}
+
+.text-container-home {
+  text-align: right;
+}
+
+.text-box-home {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  height: 150px;
+}
+
+text-box-home h2 {
+  font-size: 44px;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+text-box-home p {
+  font-size: 30px;
+  color: #666;
+}
+
+text-box-home a {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: none;
+}
