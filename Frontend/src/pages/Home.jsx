@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Logoslider from '../components/logoslider';
+import Logoslider from '../components/Logoslider';
 import Home_info from '../components/Home_info';
 
 const Home = () => {

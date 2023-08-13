@@ -242,3 +242,38 @@ text-box-home a {
   color: #007bff;
   text-decoration: none;
 }
+
+.home-logoslider-mainContainer {
+  margin: 10px;
+}
+
+.mainhome-logoslider-mainContainer .home-logoslider-container {
+  padding: 40px 0;
+}
+
+.home-logoslider-mainContainer .home-logoslider-container img {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  height: 150px; 
+  width: 150px;
+  margin: 0 auto;
+}
+
+div h3 {
+  color: white;
+  font-weight: bold;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
