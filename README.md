@@ -20,14 +20,14 @@ Please note that MentalHealthMERN is an ongoing project. Features and the techno
 
 **Server:** Node.Js, Express, MongoDB
 
-**APIs:** JokeAPI
+**APIs:** JokeAPI, MemeGen API
 
 ## Authors
 
 - Mansi Rawat [@mansir04](https://github.com/mansir04)
 - Shaheera Fatima [@shaheera02](https://github.com/shaheera02)
 - Aayushi Kushwaha [@Aayushi1111](https://github.com/Aayushi1111)
-- Ananya Shanker
+- Ananya Shanker [@AnanyaShanker](https://github.com/AnanyaShanker)
 
 ## Run Locally
 
@@ -43,16 +43,31 @@ Go to the project directory
   cd MentalHealthMERN
 ```
 
-Install dependencies
+Go to the Backend/Frontend folder
+
+```bash
+  cd Backend
+  cd Frontend
+```
+
+Install dependencies in the respective directories
 
 ```bash
   npm install
 ```
 
-Start the server
+Start the server in Backend folder
+
+```bash
+  node server.js
+```
+
+Run the application in Frontend folder on localhost
 
 ```bash
   npm run dev
 ```
+
+###
 
 #### Note : This README is subject to updates as the project progresses. Check back for the latest information.
