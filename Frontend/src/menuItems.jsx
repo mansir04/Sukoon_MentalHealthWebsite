@@ -24,6 +24,10 @@ export const menuItems = [
       title: 'Social',
       submenu: [
         {
+          title: 'Groups',
+          url: 'support-groups',
+        },
+        {
           title: 'Blogs',
           url: 'blogs',
         },

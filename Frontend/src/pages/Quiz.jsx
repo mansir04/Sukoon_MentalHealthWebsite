@@ -1,5 +1,22 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 const Quiz = () => {
-  return <h2>Add quizzez here.</h2>;
+  return (
+  <div className="Quiz">
+    <h2>Add quizzez here.</h2>
+  
+      <ul>
+        <li>
+          <Link to="/anxiety-quiz">Take Anxiety Quiz</Link>
+        </li>
+        <li>
+          <Link to="/depression-quiz">Take Depression Quiz</Link>
+        </li>
+      </ul>
+  </div>
+  
+  );
 };
 
 export default Quiz;

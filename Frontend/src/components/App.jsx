@@ -13,6 +13,9 @@ import FAQs from '../pages/FAQs';
 import Volunteer from '../pages/Volunteer';
 import ContactUs from '../pages/ContactUs';
 import SignUp from '../pages/SignUp';
+import AnxietyQuiz from '../pages/AnxietyQuiz';
+import DepressionQuiz from '../pages/DepressionQuiz';
+import SupportGroups from '../pages/SupportGroups';
 
 const App = () => {
   return (
@@ -23,8 +26,11 @@ const App = () => {
           <Route path="help" element={<Help />} />
           <Route path="articles" element={<Articles />} />
           <Route path="initiatives" element={<Initiatives />} />
+          <Route path="support-groups" element={<SupportGroups />} />
           <Route path="blogs" element={<Blogs />} />
           <Route path="quiz" element={<Quiz />} />
+          <Route path="anxiety-quiz" element={<AnxietyQuiz />} />
+          <Route path="depression-quiz" element={<DepressionQuiz />} />
           <Route path="relax" element={<Relax />} />
           <Route path="memes" element={<Memes />} />
           <Route path="faq" element={<FAQs />} />
