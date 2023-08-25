@@ -1,5 +1,14 @@
+import React from 'react';
+import CalmingVideosSlider from './CalmingVideosSlider';
+import MeditationResources from './MeditationResources';
+
 const Relax = () => {
-  return <h2>Calming videos, Music, Exercises</h2>;
+  return (
+    <div className="main-page">
+      <CalmingVideosSlider />
+      <MeditationResources />
+    </div>
+  );
 };
 
 export default Relax;
