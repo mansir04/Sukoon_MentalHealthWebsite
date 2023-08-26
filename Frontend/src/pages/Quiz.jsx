@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Quiz = () => {
   return (
-  <div className="Quiz">
-    <h2>Add quizzez here.</h2>
-  
+    <div className="Quiz">
+      <h1>Take a mental health test</h1>
+
       <ul>
         <li>
           <Link to="/anxiety-quiz">Take Anxiety Quiz</Link>
@@ -20,8 +20,8 @@ const Quiz = () => {
           <Link to="/adhd-quiz">Take ADHD Quiz</Link>
         </li>
       </ul>
-  </div>
-  
+    </div>
+
   );
 };
 
