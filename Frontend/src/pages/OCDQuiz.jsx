@@ -1,49 +1,46 @@
-import React, { useState, useEffect } from "react";
-import AnxietyResult from "../components/AnxietyResult";
+import React, { useState, useEffect } from 'react';
+import OcdResult from "../components/OcdResult";
 
-const AnxietyTest = () => {
-  const [questions, setQuestions] = useState([
+function OCDQuiz() {
+
+  const questions = [
     {
-      question: "How often have you felt restless or fidgety?",
+      question: 'Do you have an intense fear of germs or contaminants?',
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
     },
     {
-      question: "How often have you been unable to concentrate or your mind has wandered?",
+      question: 'Do you feel the need to check things repeatedly, such as locks or switches?',
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
     },
     {
-      question: "How often have you been bothered by trouble falling or staying asleep?",
+      question: 'Do you have a strict need for things to be orderly or symmetrical?',
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
     },
     {
-      question: "How often have you been bothered by feeling tired or having low energy?",
+      question: "Do you feel the need to perform repetitive behaviors in order to reduce your anxiety?",
+      answers: ["Never", "Rarely", "Sometimes", "Often", "Always"]
+    }, {
+      question: 'Do your obsessions and compulsions take up a lot of your time?',
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
-    },
-    {
-      question: "How often have you been bothered by feeling worthless or guilty?",
+    }, {
+      question: "Do you feel like you can't control your obsessions and compulsions?",
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
-    },
-    {
-      question: "How often have you been bothered by trouble making decisions?",
+    }, {
+      question: "Do you have thoughts of contamination?",
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
-    },
-    {
-      question: "How often have you been bothered by muscle tension?",
+    }, {
+      question: "Do you try to resist your obsessions or compulsions, but find it difficult to do so?",
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
-    },
-    {
-      question: "How often have you been bothered by being easily startled?",
+    }, {
+      question: "Do you have thoughts of symmetry or order?",
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
-    },
-    {
-      question: "How often have you been bothered by feeling afraid that something terrible might happen?",
+    }, {
+      question: "Do you have thoughts of needing to repeat words or phrases?",
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
-    },
-    {
-      question: "How often have you been bothered by having a racing heart?",
-      answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
-    },
-  ]);
+    }
+    // Add more questions here...
+  ];
+
 
   const [score, setScore] = useState(0)
 
@@ -69,7 +66,7 @@ const AnxietyTest = () => {
 
   return (
     <div className="container">
-      <h1 className="heading-txt">Anxiety Test</h1>
+      <h1 className="heading-txt">OCD Test</h1>
       <div>
         {questions.map((question, index) => (
           <div key={index}>
@@ -92,10 +89,14 @@ const AnxietyTest = () => {
       </div>
       <button onClick={handleSubmit} id="submit-button">Submit</button>
       <div id="score">
-        {score > 1 ? <AnxietyResult score={score} /> : <></>}
+        {score > 1 ? <OcdResult score={score} /> : <></>}
       </div>
     </div>
   );
 };
 
-export default AnxietyTest;
+
+
+
+
+export default OCDQuiz;

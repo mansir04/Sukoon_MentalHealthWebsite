@@ -1,84 +1,85 @@
 import React, { useState, useEffect } from "react";
-// import QuizResult from '../components/QuizResult';
-import DepressionResult from "../components/DepressionResult";
+import AdhdResult from "../components/AdhdResult";
 
-
-const DepressionQuiz = () => {
+const ADHDQuiz = () => {
   const [questions, setQuestions] = useState([
     {
-      question: "I have lost interest in activities I used to enjoy.",
+      question: "Do you often have trouble paying attention?",
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
     },
     {
-      question: "I have difficulty concentrating or making decisions.",
+      question: "Are you easily distracted?",
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
     },
     {
-      question: "I have feelings of worthlessness or guilt.",
+      question: "Do you have trouble staying organized?",
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
     },
     {
-      question: "I have thoughts of death or suicide.",
+      question: "Do you have trouble following through on instructions?",
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
     },
     {
-      question: "I have changes in my appetite.",
+      question: "Do you fidget or squirm a lot?",
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
     },
     {
-      question: "I have changes in my sleep patterns.",
+      question: "Do you have trouble sitting still?",
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
     },
     {
-      question: "I have decreased energy levels.",
+      question: "Do you have trouble waiting your turn?",
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
     },
     {
-      question: "I have difficulty controlling my emotions.",
+      question: "Do you often interrupt others?",
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
     },
     {
-      question: "I have physical aches and pains.",
+      question: "Do you have trouble controlling your impulses?",
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
     },
     {
-      question: "I have withdrawn from social activities.",
+      question: "Do you often feel restless or have trouble relaxing?",
+      answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
+    },
+    {
+      question: "Do you have trouble paying attention to details?",
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
     },
   ]);
 
-  // const handleQuestionChange = (index, value) => {
-  //   setQuestions((questions) => {
-  //     questions[index].value = value;
-  //     return questions;
-  //   });
-  // };
+  //   const handleSubmit = (e) => {
+  //     e.preventDefault();
+
+  //     // Calculate the user's score
+  //     const score = questions.reduce((acc, question) => {
+  //       const answer = e.target[question.question].value;
+  //       return acc + (answer === "Yes" ? 1 : 0);
+  //     }, 0);
+
+  //     // Display the user's score
+  //     alert(`Your score is ${score}.`);
+  //   };
 
   //   return (
   //     <div>
-  //       <h1>Depression Quiz</h1>
-  //       <ul>
-  //         {questions.map((question, index) => (
-  //           <li key={index}>
-  //             <h3>{question.question}</h3>
-  //             <select
-  //               name={question.question}
-  //               value={question.value}
-  //               onChange={(e) => handleQuestionChange(index, e.target.value)}
-  //             >
-  //               <option value="Never">Never</option>
-  //               <option value="Rarely">Rarely</option>
-  //               <option value="Sometimes">Sometimes</option>
-  //               <option value="Often">Often</option>
-  //               <option value="Always">Always</option>
-  //             </select>
-  //           </li>
+  //       <h1>ADHD Quiz</h1>
+
+  //       <form onSubmit={handleSubmit}>
+  //         {questions.map((question) => (
+  //           <div key={question.question}>
+  //             <p>{question.question}</p>
+  //             <input type="radio" name={question.question} value="Yes" /> Yes
+  //             <input type="radio" name={question.question} value="No" /> No
+  //           </div>
   //         ))}
-  //       </ul>
+
+  //         <button type="submit">Submit</button>
+  //       </form>
   //     </div>
   //   );
   // };
-
   const [score, setScore] = useState(0)
 
 
@@ -103,7 +104,7 @@ const DepressionQuiz = () => {
 
   return (
     <div className="container">
-      <h1 className="heading-txt">depression Test</h1>
+      <h1 className="heading-txt">ADHD Test</h1>
       <div>
         {questions.map((question, index) => (
           <div key={index}>
@@ -126,10 +127,11 @@ const DepressionQuiz = () => {
       </div>
       <button onClick={handleSubmit} id="submit-button">Submit</button>
       <div id="score">
-        {score > 1 ? <DepressionResult score={score} /> : <></>}
+        {score > 1 ? <AdhdResult score={score} /> : <></>}
       </div>
     </div>
   );
 };
 
-export default DepressionQuiz;
+
+export default ADHDQuiz;

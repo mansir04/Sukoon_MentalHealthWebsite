@@ -13,6 +13,12 @@ const Quiz = () => {
         <li>
           <Link to="/depression-quiz">Take Depression Quiz</Link>
         </li>
+        <li>
+          <Link to="/ocd-quiz">Take OCD Quiz</Link>
+        </li>
+        <li>
+          <Link to="/adhd-quiz">Take ADHD Quiz</Link>
+        </li>
       </ul>
   </div>
   
