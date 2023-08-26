@@ -15,6 +15,8 @@ import ContactUs from '../pages/ContactUs';
 import SignUp from '../pages/SignUp';
 import AnxietyQuiz from '../pages/AnxietyQuiz';
 import DepressionQuiz from '../pages/DepressionQuiz';
+import OCDQuiz from '../pages/OCDQuiz';
+import ADHDQuiz from '../pages/ADHDQuiz';
 import SupportGroups from '../pages/SupportGroups';
 
 const App = () => {
@@ -31,6 +33,11 @@ const App = () => {
           <Route path="quiz" element={<Quiz />} />
           <Route path="anxiety-quiz" element={<AnxietyQuiz />} />
           <Route path="depression-quiz" element={<DepressionQuiz />} />
+          <Route path="ocd-Quiz" element={<OCDQuiz />} />
+          <Route path="adhd-quiz" element={<ADHDQuiz />} />
+          
+
+
           <Route path="relax" element={<Relax />} />
           <Route path="memes" element={<Memes />} />
           <Route path="faq" element={<FAQs />} />
