@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import OcdResult from "../components/OcdResult";
+import OcdResult from "../ components/OcdResult";
 
-function OCDQuiz() {
+function OcdQuiz() {
 
   const questions = [
     {
@@ -99,4 +99,4 @@ function OCDQuiz() {
 
 
 
-export default OCDQuiz;
+export default OcdQuiz;
