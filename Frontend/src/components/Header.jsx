@@ -1,13 +1,13 @@
 import Navbar from './Navbar';
-// ...
 import { Link } from 'react-router-dom';
+import logo from '../images/mainlogo.png'
 
 const Header = () => {
   return (
     <header>
       <div className="nav-area">
         <Link to="/" className="logo">
-          MentalHealth
+        <img src={logo} alt="Logo" />
         </Link>
         <Navbar />
       </div>

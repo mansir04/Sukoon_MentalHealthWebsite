@@ -13,16 +13,37 @@ header {
   color: #212529;
 }
 
+.particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the particle animation behind other content */
+  background-color: transparent; /* No background color for the container */
+}
+
+#tsparticles canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .nav-area {
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 10px 20px;
+  /* z-index: 999;
+  position: fixed; */
 }
 
-.logo {
+.logo img{
+  width: 50%;
+  height: 10%;
   text-decoration: none;
   font-size: 30px;
   color: #212529;
@@ -46,7 +67,7 @@ header {
   font-size: inherit;
   color: #212529;
   text-decoration: none;
-  padding: 0.7rem 1rem;
+  padding: 0.3rem;
 }
 
 .menu-items button {
@@ -67,11 +88,14 @@ button span {
 .menu-items > a,
 .menu-items button {
   text-align: left;
+  font-size: 20px;
 }
 
 .menu-items a:hover,
 .menu-items button:hover {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
+  font-size: 25px;
+  color:#cc3852;
 }
 
 .arrow::after {
@@ -110,10 +134,28 @@ button span {
   top: -7px;
 }
 
+
+.helpline-container {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  color: rgb(255, 14, 14);
+  display: flex;
+  flex-direction: row;
+  /* border-radius: 0 0 8px 8px; */
+  /* position: fixed; or position: sticky; */
+  /* top: 0; */
+  width: 100%;
+  /* z-index: 999; Make it appear above other content */
+}
+
+.helpline-container h2 {
+  margin-bottom: 10px;
+}
+
 /* content */
 
 .content {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 3rem 20px;
 }
@@ -165,7 +207,8 @@ button span {
 
 .random-joke-header {
   margin-top: 70px;
-  background: linear-gradient(454deg, pink, orange);
+  background-image: url('../src/images/jokeimg.jpeg');
+  /* background: linear-gradient(454deg, pink, orange); */
   padding: 30px; /* Increased padding for more height */
   color: black;
   display: flex;
@@ -175,7 +218,7 @@ button span {
 }
 
 blockquote {
-  font-size: 40px; /* Increased font size */
+  font-size: 50px; /* Increased font size */
   align-items: center;
   text-align: center;
 }
@@ -186,61 +229,81 @@ blockquote {
   text-decoration: underline;
 }
 
+.home-page {
+  background-color: #ffffff;
+}
+
 .container-home {
   padding: 20px;
 }
 
 .content-section-home {
   display: grid;
-  grid-template-columns: 10fr 500px; /* Adjust the width of the text box */
+  grid-template-columns: 2fr 1fr; /* Adjust the width ratio of image and text */
   align-items: center;
   gap: 20px; /* Adjust the gap between columns */
   margin-bottom: 40px;
 }
 
 .image-container-home {
-  flex: 1;
-  max-width: 400px;
-  margin-right: 20px;
+  position: relative; /* Added positioning for overlay */
+  max-width: 100%; /* Adjusted to fit the container */
 }
 
 .image-home {
-  width: 180%;
-  height: 150%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%; /* Adjusted to fit the container */
+  height: auto; /* Allowing proportional height */
   object-fit: cover;
+  border-radius: 10px; /* Added border radius for a rounded image */
 }
 
 .text-container-home {
-  text-align: right;
+  position: absolute; /* Positioning for overlay */
+  top: 50%; /* Adjust vertical positioning */
+  right: 20px; /* Adjust horizontal positioning */
+  transform: translateY(-50%); /* Centering vertically */
+  width: 50%; /* Adjust the width of the text box */
 }
 
 .text-box-home {
   background-color: #f9f9f9;
   border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Increased padding for better spacing */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   font-family: "Roboto", sans-serif;
-  height: 150px;
 }
 
-text-box-home h2 {
-  font-size: 44px;
+.text-box-home h2 {
+  font-size: 36px; /* Adjusted font size */
   margin-bottom: 10px;
   color: #333;
   font-weight: bold;
 }
 
-text-box-home p {
-  font-size: 30px;
+.text-box-home p {
+  font-size: 24px; /* Adjusted font size */
   color: #666;
+  margin-bottom: 15px; /* Added margin for spacing */
 }
 
-text-box-home a {
-  display: block;
-  margin-top: 10px;
+.text-box-home a {
   font-size: 18px;
   color: #007bff;
   text-decoration: none;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .content-section-home {
+    grid-template-columns: 1fr; /* Change to a single column layout on smaller screens */
+  }
+
+  .text-container-home {
+    position: static; /* Reset positioning for smaller screens */
+    width: 100%; /* Full width on smaller screens */
+  }
 }
 
 .home-logoslider-mainContainer {
