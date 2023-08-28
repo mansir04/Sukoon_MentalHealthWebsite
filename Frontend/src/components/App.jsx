@@ -17,7 +17,7 @@ import AnxietyQuiz from '../pages/AnxietyQuiz';
 import DepressionQuiz from '../pages/DepressionQuiz';
 import OCDQuiz from '../pages/OCDQuiz';
 import ADHDQuiz from '../pages/ADHDQuiz';
-import SupportGroups from '../pages/SupportGroups';
+import SupportGroupsMain from '../pages/SupportGroupsMain';
 
 const App = () => {
   return (
@@ -28,7 +28,7 @@ const App = () => {
           <Route path="help" element={<Help />} />
           <Route path="articles" element={<Articles />} />
           <Route path="initiatives" element={<Initiatives />} />
-          <Route path="support-groups" element={<SupportGroups />} />
+          <Route path="support-groups" element={<SupportGroupsMain />} />
           <Route path="blogs" element={<Blogs />} />
           <Route path="quiz" element={<Quiz />} />
           <Route path="anxiety-quiz" element={<AnxietyQuiz />} />
