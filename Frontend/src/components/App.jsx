@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
 import Layout from './Layout';
-
 import Home from '../pages/Home';
 import Help from '../pages/Help';
 import Articles from '../pages/Articles';
@@ -35,9 +34,6 @@ const App = () => {
           <Route path="depression-quiz" element={<DepressionQuiz />} />
           <Route path="ocd-Quiz" element={<OCDQuiz />} />
           <Route path="adhd-quiz" element={<ADHDQuiz />} />
-          
-
-
           <Route path="relax" element={<Relax />} />
           <Route path="memes" element={<Memes />} />
           <Route path="faq" element={<FAQs />} />
