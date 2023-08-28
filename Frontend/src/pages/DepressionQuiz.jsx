@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 // import QuizResult from '../components/QuizResult';
 import DepressionResult from "../components/DepressionResult";
+import ".././App.css";
 
 
 const DepressionQuiz = () => {
@@ -124,7 +125,7 @@ const DepressionQuiz = () => {
           </div>
         ))}
       </div>
-      <button onClick={handleSubmit} id="submit-button">Submit</button>
+      <button onClick={handleSubmit} id="submit-button"className='button'>Submit</button>
       <div id="score">
         {score > 1 ? <DepressionResult score={score} /> : <></>}
       </div>
