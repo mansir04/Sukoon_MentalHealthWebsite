@@ -460,25 +460,13 @@ div h3 {
 
 
 /* Reset some default browser styles */
-.OcdQuiz .body, h1, h2, ul, li {
-  margin: 0;
-  padding: 10;
-}
-.Quiz .body, h1, h2, ul, li {
-  margin: 0;
-  padding: 10;
 
- .AnxietyQuiz .body, h1, h2, ul, li {
-    margin: 0;
-    padding: 10;
-  }
 
-}
-
-.OcdQuiz  {
+.OcdQuiz, .ADHDQuiz, .AnxietyQuiz , .DepressionQuiz , .Quiz {
   font-family: Arial, sans-serif;
-  background-image: url("../src/images/memegeneratorbgimg.jpeg");
-  background-size: contain; 
+
+  background-image: url("../src/images/mona-eendra-vC8wj_Kphak-unsplash.jpg");
+  background-size: cover; 
   background-position:  center;
 
   background-repeat: no-repeat;
@@ -500,31 +488,33 @@ div h3 {
 
 
 
-.OcdQuiz .container {
+.OcdQuiz .container , .ADHDQuiz .container , .AnxietyQuiz .container , .DepressionQuiz .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
 
-.OcdQuiz .heading-txt {
+.OcdQuiz .heading-txt, .AnxietyQuiz .heading-txt , .DepressionQuiz .heading-txt, .ADHDQuiz .heading-txt {
   text-align: center;
   color : blue;
   margin-bottom: 20px;
 }
 
-.OcdQuiz  .question {
+.OcdQuiz  .question, .AnxietyQuiz .question , .DepressionQuiz .question, .ADHDQuiz .question  {
   font-size: 1.2em;
   margin-bottom: 10px;
 }
 
-.OcdQuiz .option-container {
+
+
+.OcdQuiz .option-container ,.AnxietyQuiz .option-container , .DepressionQuiz .option-container, .ADHDQuiz .option-container {
   list-style: none;
-  padding-left: 0;
+  padding-left: 10;
   color :#630a4a;
 }
 
-.OcdQuiz .option {
-  margin-bottom: 5px;
+.OcdQuiz .option .AnxietyQuiz .option , .DepressionQuiz .option, .ADHDQuiz .option {
+  margin-bottom: 10px;
 }
 
 input[type="radio"] {
@@ -534,7 +524,7 @@ input[type="radio"] {
  .button {
   display: block;
   margin: 20px auto;
-  padding: 10px 20px;
+  padding: 20px 50px;
   background-color: #007bff;
   color: rgb(255, 255, 255);
   border: none;

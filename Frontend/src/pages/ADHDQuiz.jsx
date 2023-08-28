@@ -104,8 +104,10 @@ const ADHDQuiz = () => {
 
 
   return (
+    <div className="ADHDQuiz">
+
     <div className="container">
-      <h1 className="heading-txt">ADHD Test</h1>
+      <h1 className="heading-txt">ADHD TEST</h1>
       <div>
         {questions.map((question, index) => (
           <div key={index}>
@@ -130,6 +132,7 @@ const ADHDQuiz = () => {
       <div id="score">
         {score > 1 ? <AdhdResult score={score} /> : <></>}
       </div>
+    </div>
     </div>
   );
 };

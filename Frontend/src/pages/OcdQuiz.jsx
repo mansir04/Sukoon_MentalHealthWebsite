@@ -75,6 +75,7 @@ function OcdQuiz() {
           <div key={index}>
             <h2 className="question">{question.question}</h2>
             <ul className="option-container">
+          
               {question.answers.map((answer, answerIndex) => (
                 <li key={answerIndex} id={`answer-${answerIndex}`} className="option">
                   <input
