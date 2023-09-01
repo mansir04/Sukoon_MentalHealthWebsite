@@ -68,8 +68,12 @@ const AnxietyTest = () => {
 
 
   return (
+    <div className="AnxietyQuiz">
+    
     <div className="container">
       <h1 className="heading-txt">Anxiety Test</h1>
+      <h3 className="subheading"> <center>attempt all questions for accurate results</center></h3>
+      
       <div>
         {questions.map((question, index) => (
           <div key={index}>
@@ -90,12 +94,14 @@ const AnxietyTest = () => {
           </div>
         ))}
       </div>
-      <button onClick={handleSubmit} id="submit-button">Submit</button>
+      <button onClick={handleSubmit} id="submit-button"className='button'>Submit</button>
       <div id="score">
         {score > 1 ? <AnxietyResult score={score} /> : <></>}
       </div>
     </div>
+    </div>
   );
+  
 };
 
 export default AnxietyTest;

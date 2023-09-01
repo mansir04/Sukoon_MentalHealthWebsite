@@ -457,3 +457,142 @@ div h3 {
   margin-top: 10px;
   cursor: pointer;
 }
+
+
+/* Reset some default browser styles */
+
+
+.OcdQuiz, .ADHDQuiz, .AnxietyQuiz , .DepressionQuiz , .Quiz {
+  font-family: Arial, sans-serif;
+
+  background-image: url("../src/images/mona-eendra-vC8wj_Kphak-unsplash.jpg");
+  background-size: cover; 
+  background-position:  center;
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
+
+
+
+
+.Quiz .heading-txt {
+  text-align: center;
+  color : rgb(195, 0, 255);
+  margin-bottom: 40px;
+  
+
+}
+
+
+
+.OcdQuiz .container , .ADHDQuiz .container , .AnxietyQuiz .container , .DepressionQuiz .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.OcdQuiz .heading-txt, .AnxietyQuiz .heading-txt , .DepressionQuiz .heading-txt, .ADHDQuiz .heading-txt {
+  text-align: center;
+  color : blue;
+  margin-bottom: 20px;
+}
+
+.OcdQuiz  .question, .AnxietyQuiz .question , .DepressionQuiz .question, .ADHDQuiz .question  {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+
+
+.OcdQuiz .option-container ,.AnxietyQuiz .option-container , .DepressionQuiz .option-container, .ADHDQuiz .option-container {
+  list-style: none;
+  padding-left: 10;
+  color :#630a4a;
+}
+
+.OcdQuiz .option .AnxietyQuiz .option , .DepressionQuiz .option, .ADHDQuiz .option {
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+ .button {
+  display: block;
+  margin: 20px auto;
+  padding: 20px 50px;
+  background-color: #007bff;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
+
+#score {
+  margin-top: 100 px;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center
+}
+
+.card {
+  border: 1px solid #160202;
+  border-radius: 26px;
+  margin: 20px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 calc(33.33% - 40px);
+  max-width: 300px;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+b {
+  display: inline-block;
+  background-color: red;
+  color: pink;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+b:hover {
+  background-color: #0056b3;
+}
+
+
+/* Add more custom styling as needed */

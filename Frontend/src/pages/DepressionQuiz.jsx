@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 // import QuizResult from '../components/QuizResult';
 import DepressionResult from "../components/DepressionResult";
+import ".././App.css";
 
 
 const DepressionQuiz = () => {
@@ -54,22 +55,7 @@ const DepressionQuiz = () => {
   //   });
   // };
 
-  //   return (
-  //     <div>
-  //       <h1>Depression Quiz</h1>
-  //       <ul>
-  //         {questions.map((question, index) => (
-  //           <li key={index}>
-  //             <h3>{question.question}</h3>
-  //             <select
-  //               name={question.question}
-  //               value={question.value}
-  //               onChange={(e) => handleQuestionChange(index, e.target.value)}
-  //             >
-  //               <option value="Never">Never</option>
-  //               <option value="Rarely">Rarely</option>
-  //               <option value="Sometimes">Sometimes</option>
-  //               <option value="Often">Often</option>
+ 
   //               <option value="Always">Always</option>
   //             </select>
   //           </li>
@@ -102,8 +88,10 @@ const DepressionQuiz = () => {
 
 
   return (
+    <div className="DepressionQuiz">
+
     <div className="container">
-      <h1 className="heading-txt">depression Test</h1>
+      <h1 className="heading-txt">Depression Test</h1>
       <div>
         {questions.map((question, index) => (
           <div key={index}>
@@ -124,10 +112,11 @@ const DepressionQuiz = () => {
           </div>
         ))}
       </div>
-      <button onClick={handleSubmit} id="submit-button">Submit</button>
+      <button onClick={handleSubmit} id="submit-button"className='button'>Submit</button>
       <div id="score">
         {score > 1 ? <DepressionResult score={score} /> : <></>}
       </div>
+    </div>
     </div>
   );
 };

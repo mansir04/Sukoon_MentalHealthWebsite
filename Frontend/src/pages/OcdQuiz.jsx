@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import OcdResult from "../components/OcdResult";
+import ".././App.css";
 
 function OcdQuiz() {
 
@@ -65,13 +66,16 @@ function OcdQuiz() {
 
 
   return (
+    <div className="OcdQuiz">  
     <div className="container">
+
       <h1 className="heading-txt">OCD Test</h1>
       <div>
         {questions.map((question, index) => (
           <div key={index}>
             <h2 className="question">{question.question}</h2>
             <ul className="option-container">
+          
               {question.answers.map((answer, answerIndex) => (
                 <li key={answerIndex} id={`answer-${answerIndex}`} className="option">
                   <input
@@ -87,10 +91,13 @@ function OcdQuiz() {
           </div>
         ))}
       </div>
-      <button onClick={handleSubmit} id="submit-button">Submit</button>
+      
+      <button onClick={handleSubmit} id="submit-button" className='button'> Submit</button>
+
       <div id="score">
         {score > 1 ? <OcdResult score={score} /> : <></>}
       </div>
+    </div>
     </div>
   );
 };

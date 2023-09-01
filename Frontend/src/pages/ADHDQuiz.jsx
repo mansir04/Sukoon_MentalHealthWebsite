@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AdhdResult from "../components/AdhdResult";
+import ".././App.css";
 
 const ADHDQuiz = () => {
   const [questions, setQuestions] = useState([
@@ -103,8 +104,10 @@ const ADHDQuiz = () => {
 
 
   return (
+    <div className="ADHDQuiz">
+
     <div className="container">
-      <h1 className="heading-txt">ADHD Test</h1>
+      <h1 className="heading-txt">ADHD TEST</h1>
       <div>
         {questions.map((question, index) => (
           <div key={index}>
@@ -125,10 +128,11 @@ const ADHDQuiz = () => {
           </div>
         ))}
       </div>
-      <button onClick={handleSubmit} id="submit-button">Submit</button>
+      <button onClick={handleSubmit} id="submit-button" className='button'>  Submit</button>
       <div id="score">
         {score > 1 ? <AdhdResult score={score} /> : <></>}
       </div>
+    </div>
     </div>
   );
 };
