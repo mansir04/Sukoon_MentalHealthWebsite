@@ -1,4 +1,19 @@
-export const menuItems = [
+import React, { useState } from "react";
+import { signOut } from "firebase/auth";
+import { auth } from "./firebase-config";
+
+const getMenuItems = () => {
+  const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
+
+  const signUserOut = () => {
+    signOut(auth).then(() => {
+      localStorage.clear();
+      setIsAuth(false);
+      window.location.pathname = "/login";
+    });
+  };
+
+  const menuItems = [
     {
       title: 'Home',
       url: '/',
@@ -56,15 +71,11 @@ export const menuItems = [
           title: 'Volunteer',
           url: 'volunteer',
         },
-        {
-          title: 'Contact Us',
-          url: 'contact',
-        },
       ],
     },
-    {
-      title: 'Sign Up',
-      url: 'sign-up', 
-      isCTA: true, //call to action button
-    },
   ];
+
+  return menuItems;
+};
+
+export default getMenuItems;

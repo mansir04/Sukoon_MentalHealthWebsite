@@ -54,7 +54,7 @@ header {
 
 .menu-items {
   position: relative;
-  font-size: 16px;
+  font-size: 20px;
   margin: 0 12px; /* Adjust spacing between menu items */
 }
 
@@ -75,6 +75,21 @@ header {
   background-color: transparent;
   cursor: pointer;
   width: 100%;
+}
+.auth-links {
+  display: flex;
+  align-items: center;
+  gap: 3px; /* Adjust the spacing between "Create Post" and "Logout" as needed */
+}
+.LogOut-Button{
+  background-color: #ffffff; /* Change to your desired background color */
+  color: #000000; /* Change to your desired text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 5px; /* Add rounded corners if desired */
+  cursor: pointer;
+  width: 5em;
+  font-size: 20px;
 }
 
 button span {
