@@ -128,6 +128,9 @@ storybook-static/
 /tsconfig.tsbuildinfo
 *.tsbuildinfo
 
+#firebase file
+firebase-config.jsx
+
 # Prettier
 /prettier.config.js
 
