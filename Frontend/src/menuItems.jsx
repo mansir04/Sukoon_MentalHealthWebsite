@@ -71,6 +71,10 @@ const getMenuItems = () => {
           title: 'Volunteer',
           url: 'volunteer',
         },
+        {
+          title: 'Contact Us',
+          url: 'contact',
+        },
       ],
     },
   ];
