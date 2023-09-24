@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { addDoc, collection } from "firebase/firestore";
 import { db, auth } from "../firebase-config";
 import { useNavigate } from "react-router-dom";
-import './App1.css'
 
 function CreatePost({ isAuth }) {
   const [title, setTitle] = useState("");
@@ -17,7 +16,7 @@ function CreatePost({ isAuth }) {
       postText,
       author: { name: auth.currentUser.displayName, id: auth.currentUser.uid },
     });
-    navigate("/");
+    navigate("/blogs");
   };
 
   useEffect(() => {

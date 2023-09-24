@@ -1,19 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
 import { auth, db } from "../firebase-config";
-import './App1.css'
 import { Link } from "react-router-dom";
 import { signOut } from "firebase/auth";
 
 function Blogs({ isAuth }) {
-
-  const signUserOut = () => {
-    signOut(auth).then(() => {
-      localStorage.clear();
-      setIsAuth(false);
-      window.location.pathname = "/login";
-    });
-  };
 
   const [postLists, setPostList] = useState([]);
   const postsCollectionRef = collection(db, "posts");
@@ -34,18 +25,6 @@ function Blogs({ isAuth }) {
 
   return (
     <div className="blogsPage">
-        <nav>
-        <Link to="http://localhost:5173/blogs"> Blogs </Link>
-
-        {!isAuth ? (
-          <Link to="/login"> Login </Link>
-        ) : (
-          <>
-            <Link to="/createpost"> Create Post </Link>
-            <button onClick={signUserOut}> Log Out</button>
-          </>
-        )}
-      </nav>
       {postLists.map((post) => {
         return (
           <div className="post" key={post.id}>
@@ -66,7 +45,7 @@ function Blogs({ isAuth }) {
               </div>
             </div>
             <div className="postTextContainer">{post.postText}</div>
-            <h3>@{post.author.name}</h3>
+            <h3 className="postAuthor">@{post.author.name}</h3>
           </div>
         );
       })}
