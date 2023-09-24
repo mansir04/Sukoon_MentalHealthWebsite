@@ -1,0 +1,99 @@
+/* Existing styles for .mental-illness-page */
+.mental-illness-page {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.mental-illness-page h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.mental-illness-page p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.mental-illness-page ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.mental-illness-page li {
+  margin-bottom: 10px;
+}
+
+.mental-illness-page a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.mental-illness-page a:hover {
+  color: #0056b3;
+}
+
+/* New style for the image */
+.mental-illness-page img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  float: left;
+  margin-right: 20px;
+}
+
+/* Arrow button styles */
+/* Arrow button styles */
+.arrow-button {
+  width: 50px;
+  height: 50px;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 50%; /* Make it circular */
+  font-size: 24px; /* Adjust the font size as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition effects */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.arrow-button:hover {
+  background-color: #0056b3; /* Change the background color on hover */
+  transform: scale(1.1); /* Add a slight scaling effect on hover */
+}
+
+/* Left arrow */
+.prev-button {
+  float: left; /* Float left for the previous button */
+}
+
+/* Right arrow */
+.next-button {
+  float: right; /* Float right for the next button */
+}
+
+.image-container {
+  position: relative;
+  width: 100%; /* Set a fixed width for the container */
+  max-width: 600px; /* Adjust the max-width as needed */
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center; /* Center the image and buttons horizontally */
+}
+
+.large-image {
+  width: 100%; /* Make the image fill the container width */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image horizontally within the container */
+}
+

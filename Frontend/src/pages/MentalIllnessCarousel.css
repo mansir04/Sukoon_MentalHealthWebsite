@@ -1,0 +1,68 @@
+/* Carousel styles */
+.carousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .carousel-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .carousel-item h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .carousel-item p {
+    margin-bottom: 15px;
+    color: #666;
+  }
+  
+  .read-more {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .read-more:hover {
+    background-color: #aab3bc;
+  }
+  
+  /* Mental illness page styles */
+  .mental-illness-page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+  
+  .mental-illness-page h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .mental-illness-page p {
+    margin-bottom: 20px;
+  }
+  

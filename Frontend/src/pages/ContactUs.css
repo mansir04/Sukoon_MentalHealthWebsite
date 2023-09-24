@@ -1,0 +1,133 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-image: url('https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png'); /* Replace with the actual path to your image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    color:white; /* Set text color to white for better readability */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .contact-info {
+    flex: 1;
+    padding: 2rem;
+    background-image: url('https://media.istockphoto.com/id/1465352994/photo/abstract-digital-background.webp?b=1&s=170667a&w=0&k=20&c=fbQF3xro_gX0A06HcEYRjERIgQA1lKe6q_X-_xEfRus='); /* Replace with the actual path to your background image */
+  background-size: cover; /* Cover the entire element */
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .address {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .address .icon {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    color: #00fafa; /* Icon color */
+    
+  }
+  .address .icon:hover {
+    color: #007bff; /* Change icon color on hover */
+  }
+  
+  
+
+  .social-icons .icon {
+    font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #00fafa; /* Icon color */
+  transition: color 0.3s ease;
+  }
+  
+  .social-icons .icon:hover {
+    color: #007bff; /* Change icon color on hover */
+
+  }
+  
+  .contact-form {
+    flex: 1;
+    padding: 2rem;
+    background-image: url('https://media.istockphoto.com/id/1465352994/photo/abstract-digital-background.webp?b=1&s=170667a&w=0&k=20&c=fbQF3xro_gX0A06HcEYRjERIgQA1lKe6q_X-_xEfRus='); /* Replace with the actual path to your background image */
+  background-size: cover; /* Cover the entire element */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h3 {
+    color:white;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    color: #dedbdb;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button[type="submit"] {
+    background-color: rgb(8, 9, 68);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #00fafa;
+  }
+
+  .contact-form,
+.address .icon,
+.social-icons .icon {
+  opacity: 0;
+  transform: translateY(20px); /* Start slightly below and move up */
+}
+
+/* Animation for fade-in */
+.contact-container {
+  animation: fadeIn 1s ease-in-out forwards; /* Run the fadeIn animation */
+}
+
+/* Define the fadeIn animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly below and move up */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Reach the final position */
+  }
+}
+
+/* Apply the animation to the contact form and icons */
+.contact-form,
+.address .icon,
+.social-icons .icon {
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.2s; /* Delay the animation slightly */
+}
+  
