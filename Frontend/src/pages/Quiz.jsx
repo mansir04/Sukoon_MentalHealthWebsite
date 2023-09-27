@@ -12,6 +12,7 @@ const Quiz = () => {
     <div className="Quiz">
       <div className="container">
       <h1 className="heading-txt">Take a mental health test</h1>
+      <centre> <h3 className="subheading-txt">Please attempt all the questions honestly for accurate results</h3> </centre>
       
       <div className="card">
         <div className="card-image">

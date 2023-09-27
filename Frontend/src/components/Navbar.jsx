@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { signOut } from "firebase/auth";
-import { auth } from "../firebase-config";
+import { auth, db } from "../components/firebase-config";
 import MenuItems from './MenuItems';
 import getMenuItems from '../menuItems';
 import '../App.css'

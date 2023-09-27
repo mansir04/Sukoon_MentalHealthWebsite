@@ -3,6 +3,7 @@ import AdhdResult from "../components/AdhdResult";
 import ".././App.css";
 
 const ADHDQuiz = () => {
+  const initialScore = 0;
   const [questions, setQuestions] = useState([
     {
       question: "Do you often have trouble paying attention?",
@@ -50,37 +51,16 @@ const ADHDQuiz = () => {
     },
   ]);
 
-  //   const handleSubmit = (e) => {
-  //     e.preventDefault();
+  const resetQuiz = () => {
+    setScore(initialScore);
+    const radioButtons = document.querySelectorAll("input[type='radio']");
+    radioButtons.forEach((radio) => (radio.checked = false));
+    document.getElementById("submit-button").classList.remove("hidden");
+  };
 
-  //     // Calculate the user's score
-  //     const score = questions.reduce((acc, question) => {
-  //       const answer = e.target[question.question].value;
-  //       return acc + (answer === "Yes" ? 1 : 0);
-  //     }, 0);
 
-  //     // Display the user's score
-  //     alert(`Your score is ${score}.`);
-  //   };
+  
 
-  //   return (
-  //     <div>
-  //       <h1>ADHD Quiz</h1>
-
-  //       <form onSubmit={handleSubmit}>
-  //         {questions.map((question) => (
-  //           <div key={question.question}>
-  //             <p>{question.question}</p>
-  //             <input type="radio" name={question.question} value="Yes" /> Yes
-  //             <input type="radio" name={question.question} value="No" /> No
-  //           </div>
-  //         ))}
-
-  //         <button type="submit">Submit</button>
-  //       </form>
-  //     </div>
-  //   );
-  // };
   const [score, setScore] = useState(0)
 
 
@@ -129,6 +109,9 @@ const ADHDQuiz = () => {
         ))}
       </div>
       <button onClick={handleSubmit} id="submit-button" className='button'>  Submit</button>
+      <button onClick={resetQuiz} className="button">
+          Retake this quiz
+        </button>
       <div id="score">
         {score > 1 ? <AdhdResult score={score} /> : <></>}
       </div>

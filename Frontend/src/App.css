@@ -529,6 +529,16 @@ div h3 {
 
 }
 
+.Quiz .subheading-txt {
+  text-align: center;
+  color : rgb(255, 0, 170);
+  margin-bottom: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 10;
+
+}
+
+
 
 
 .OcdQuiz .container , .ADHDQuiz .container , .AnxietyQuiz .container , .DepressionQuiz .container {
