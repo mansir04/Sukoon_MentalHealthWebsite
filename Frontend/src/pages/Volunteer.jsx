@@ -6,13 +6,14 @@ import './Volunteer.css';
 const founders = [
   {
     name: 'Ananya Shanker',
-    role: 'Founder & CEO',
-    image: './20230308_154612~2 (1).jpg', // Replace with actual image file
+    role: 'Founder & CEO', 
+  
+    image: 'https://i.pinimg.com/564x/29/77/fe/2977fe836b3ea15ec686d5031006f9ef.jpg', // Replace with actual image file
   },
   {
     name: 'Shaheera Fatima',
     role: 'Founder & CEO',
-    image: 'jane-smith.jpg', // Replace with actual image file
+    image: 'https://i.pinimg.com/564x/69/5c/3c/695c3cee049e454e65b9c90c6ae1a29f.jpg', // Replace with actual image file
   },
 
   {
@@ -23,7 +24,7 @@ const founders = [
   {
     name: 'Aayushi',
     role: 'Founder & CEO',
-    image: 'jane-smith.jpg', // Replace with actual image file
+    image: 'https://i.pinimg.com/564x/c3/0d/06/c30d0644771cbcb628019836ed319afc.jpg', // Replace with actual image file
   },
 
 
