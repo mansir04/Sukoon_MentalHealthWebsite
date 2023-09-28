@@ -60,15 +60,16 @@ const Home = () => {
             </blockquote>
           </header>
         </div>
-        <div className='home-project-intro'>
+         <div className='home-project-intro'>
         <p>
-          We hope you enjoy our jokes as much as we do. Sukoon has many such resourcse to make you 
-          smile even when you feel you can't. We also offer a variety of other resources to help you 
+          We hope you enjoy our jokes as much as we do. 
+          Sukoon has many such resources to make you smile even when you feel you can't. We also offer a variety of other resources to help you 
           understand yourself better. After all we all deserve to know what is going inside us. 
         </p>
         </div>
 
         <Home_info />
+        {/*
         <div className='home-project-intro'>
         <p>
           The team at Sukoon realises we can't do it all. We actively select the right resources and 
@@ -76,7 +77,7 @@ const Home = () => {
           you could ever need. 
         </p>
         </div>
-
+    */}
         <Logoslider />
         </div>
       </div>

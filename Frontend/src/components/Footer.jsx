@@ -10,11 +10,11 @@ const Footer = () => {
         <div className="footer-links">
           <a href="#">Home</a>
           <a href="#">About</a>
-          <a href="#">Services</a>
+          <a href="#">Resources</a>
           <a href="#">Contact</a>
         </div>
         <div className="footer-copyright">
-          &copy; {currentYear} Your Company Name. All rights reserved.
+          &copy; {currentYear} SUKOON. All rights reserved.
         </div>
       </div>
     </footer>
