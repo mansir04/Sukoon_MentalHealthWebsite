@@ -42,6 +42,12 @@ function OcdQuiz() {
     // Add more questions here...
   ];
 
+  const resetQuiz = () => {
+    setScore(initialScore);
+    const radioButtons = document.querySelectorAll("input[type='radio']");
+    radioButtons.forEach((radio) => (radio.checked = false));
+    document.getElementById("submit-button").classList.remove("hidden");
+  };
 
   const [score, setScore] = useState(0)
 
@@ -93,7 +99,9 @@ function OcdQuiz() {
       </div>
       
       <button onClick={handleSubmit} id="submit-button" className='button'> Submit</button>
-
+      <button onClick={resetQuiz} className="button">
+          Retake this quiz
+        </button>
       <div id="score">
         {score > 1 ? <OcdResult score={score} /> : <></>}
       </div>

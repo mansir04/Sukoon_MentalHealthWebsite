@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { signOut } from "firebase/auth";
-import { auth } from "../firebase-config";
+import { auth } from "./firebase-config";
 
 import CreatePost from "../pages/CreatePost";
 import Login from "../pages/Login";
