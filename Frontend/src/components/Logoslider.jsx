@@ -25,7 +25,7 @@ class Logoslider extends Component {
 
     return (
       <div className="home-logoslider-mainContainer">
-        <h2>NGOs WE SUPPORT</h2>
+        <h2><u>NGOs WE SUPPORT</u></h2>
         <Slider {...settings}>
           {logos.map((logoSrc, index) => (
             <div className="home-logoslider-container" key={index}>

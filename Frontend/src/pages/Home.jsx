@@ -31,6 +31,25 @@ const Home = () => {
         <div className='home-allcontent'>
         <Design />
         
+        <div className='home-project-intro-heading'>
+          <u></u>
+        </div>
+
+        <div className='home-project-intro'>
+        <p>
+        </p>
+        </div>
+
+        <div className='home-project-intro-image'>
+          <img src={img1}></img>
+        </div>
+        
+        <div className='home-project-intro-quote'>
+        <p>
+          "In the journey of life, may you find solace, laughter, and the companionship of kindred souls."
+        </p>
+        </div>
+
         <div className="random-joke">
           <header className="random-joke-header">
             <blockquote>
@@ -41,22 +60,28 @@ const Home = () => {
             </blockquote>
           </header>
         </div>
+<<<<<<< Updated upstream
         <img src={img1}></img>
+=======
+        
+>>>>>>> Stashed changes
         <div className='home-project-intro'>
-        <h1>Sukoon </h1>
-          <h3 style={{ color: 'blue' }}>Embrace, Empower, Elevate</h3>
-        <h4>
         <p>
-          Sukoon emerged from a deep concern for the well-being of Indian youth, driven by the rising mental health 
-          challenges and suicides. Our mission centers on you, the user, and our commitment to offering 
-          clear and meaningful support. In a world filled with confusion and loneliness, we want you to 
-          discover a path to joy and connection. Here's a heartfelt message from our team: "In the 
-          journey of life, may you find solace, laughter, and the companionship of kindred souls."
+          We hope you enjoy our jokes as much as we do. Sukoon has many such resourcse to make you 
+          smile even when you feel you can't. We also offer a variety of other resources to help you 
+          understand yourself better. After all we all deserve to know what is going inside us. 
         </p>
-        </h4>
         </div>
 
         <Home_info />
+        <div className='home-project-intro'>
+        <p>
+          The team at Sukoon realises we can't do it all. We actively select the right resources and 
+          organisations where you can find help other than our own to make sure you have everything 
+          you could ever need. 
+        </p>
+        </div>
+
         <Logoslider />
         </div>
       </div>

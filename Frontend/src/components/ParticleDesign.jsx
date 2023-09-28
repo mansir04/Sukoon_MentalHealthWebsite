@@ -52,14 +52,21 @@ const ParticleAnimation = () => {
           },
           particles: {
             color: {
-              value: "#000000", // White particles color
+              value: ["#0000FF", "#2196F3", "#64B5F6", "#BBDEFB", "#E3F2FD"], // Shades of blue
             },
+            // links: {
+            //   color: "#000000", // White links color
+            //   distance: 120,
+            //   enable: true,
+            //   opacity: 0.4,
+            //   width: 1,
+            // },
             links: {
-              color: "#000000", // White links color
+              color: "#28136e",
               distance: 120,
               enable: true,
               opacity: 0.6,
-              width: 1,
+              width: 2, // Adjust the width of the links
             },
             collisions: {
               enable: true,
@@ -79,16 +86,16 @@ const ParticleAnimation = () => {
                 enable: true,
                 area: 1200,
               },
-              value: 80,
+              value: 70,
             },
             opacity: {
-              value: 0.5,
+              value: 1,
             },
             shape: {
               type: "circle",
             },
             size: {
-              value: { min: 1, max: 2 },
+              value: { min: 1, max: 3 },
             },
           },
           detectRetina: true,

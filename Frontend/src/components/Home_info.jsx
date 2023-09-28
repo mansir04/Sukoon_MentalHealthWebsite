@@ -1,8 +1,5 @@
 import React, { Component,useState, useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform } from "framer-motion";
-import image1 from '../images/whoweareimg.jpeg';
-import image2 from '../images/quizimg.jpeg';
-import image3 from '../images/default.png';
 
 const contentData = [
   {
