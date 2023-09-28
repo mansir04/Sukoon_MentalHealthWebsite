@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Garamond", sans-serif;
+  font-family: "Garamound", sans-serif;
 }
 
 .App {
@@ -14,14 +14,29 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .home-allcontent{
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 50px;
-  margin-right: 50px;
+}
+
+.home-project-intro-heading{
+ font-weight: bolder;
+ font-size: 50px;
+ margin-left: 15%;
+ margin-right: 10%;
+ margin-top: 1em;
+ text-shadow: 1.5px 1.5px 1px #000;
+}
+
+.home-project-intro-image img{
+  width: 80%;
+  height: 30%;
+  margin-left: 9%;
+  margin-right: 10%;
 }
 
 .home-page {
   width: 100%;
-  background-color: rgba(184, 243, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .marquee {
@@ -46,10 +61,20 @@ body {
 
 .home-project-intro{
   margin-top: 4em;
-  font-size: 36px;
+  font-size: 2em;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 4em;
+  /* font-weight: bold; */
+  color: #15012f;
+
+}
+
+.home-project-intro-quote{
+  font-size: 50px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 2%;
 }
 
 nav {
@@ -233,7 +258,7 @@ button span {
 /* content */
 
 .content {
-  max-width: 1400px;
+  max-width: 100%;
   height: auto;
   margin: 0 auto;
 
@@ -330,6 +355,7 @@ blockquote {
 .image-home {
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 10%;
   width: 35%; /* Adjusted to fit the container */
   height: auto; /* Allowing proportional height */
   object-fit: cover;
@@ -337,6 +363,7 @@ blockquote {
 }
 
 .text-container-home {
+  margin-right: 10%;
   position: absolute; /* Positioning for overlay */
   top: 50%; /* Adjust vertical positioning */
   right: 20px; /* Adjust horizontal positioning */
@@ -396,11 +423,12 @@ blockquote {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
   text-align: center;
   height: 150px;
   width: 150px;
-  margin: 0 auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+
 }
 
 div h3 {

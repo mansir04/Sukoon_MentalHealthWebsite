@@ -24,7 +24,7 @@ const getMenuItems = () => {
       title: 'Resources',
       submenu: [
         {
-          title: 'Help',
+          title: 'News',
           url: 'help',
         },
         {
