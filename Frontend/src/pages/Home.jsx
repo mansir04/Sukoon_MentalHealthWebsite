@@ -3,6 +3,7 @@ import axios from 'axios';
 import Logoslider from '../components/Logoslider';
 import Home_info from '../components/Home_info';
 import Design from "../components/ParticleDesign";
+import img1 from '../images/jokeBGImg4.jpg';
 
 const Home = () => {
   const [joke, setJoke] = useState('');
@@ -40,7 +41,7 @@ const Home = () => {
             </blockquote>
           </header>
         </div>
-
+        <img src={img1}></img>
         <div className='home-project-intro'>
         <h1>Sukoon </h1>
           <h3 style={{ color: 'blue' }}>Embrace, Empower, Elevate</h3>
