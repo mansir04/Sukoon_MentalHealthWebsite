@@ -60,11 +60,6 @@ const Home = () => {
             </blockquote>
           </header>
         </div>
-<<<<<<< Updated upstream
-        <img src={img1}></img>
-=======
-        
->>>>>>> Stashed changes
         <div className='home-project-intro'>
         <p>
           We hope you enjoy our jokes as much as we do. Sukoon has many such resourcse to make you 
