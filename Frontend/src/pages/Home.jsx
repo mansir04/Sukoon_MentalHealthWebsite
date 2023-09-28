@@ -3,6 +3,7 @@ import axios from 'axios';
 import Logoslider from '../components/Logoslider';
 import Home_info from '../components/Home_info';
 import Design from "../components/ParticleDesign";
+import img1 from '../images/jokeBGImg4.jpg';
 
 const Home = () => {
   const [joke, setJoke] = useState('');
@@ -22,12 +23,14 @@ const Home = () => {
 
     return (
       <div className='home-page'>
-        <Design />
         <div className="helpline-container">
-      <h2>Helpline Numbers  :  1800-599-0019   102</h2>
-
-    </div>
-        <h1>A One Stop Solution For All Your Mental Health Needs !</h1>
+        <h3 className="marquee" style={{ color: 'crimson' }}>
+          Helpline Numbers under the Tele-MANAS Programme : ☎️ 14416 or 📞 1-800 891 4416
+        </h3>
+      </div>
+        <div className='home-allcontent'>
+        <Design />
+        
         <div className="random-joke">
           <header className="random-joke-header">
             <blockquote>
@@ -38,9 +41,26 @@ const Home = () => {
             </blockquote>
           </header>
         </div>
+        <img src={img1}></img>
+        <div className='home-project-intro'>
+        <h1>Sukoon </h1>
+          <h3 style={{ color: 'blue' }}>Embrace, Empower, Elevate</h3>
+        <h4>
+        <p>
+          Sukoon emerged from a deep concern for the well-being of Indian youth, driven by the rising mental health 
+          challenges and suicides. Our mission centers on you, the user, and our commitment to offering 
+          clear and meaningful support. In a world filled with confusion and loneliness, we want you to 
+          discover a path to joy and connection. Here's a heartfelt message from our team: "In the 
+          journey of life, may you find solace, laughter, and the companionship of kindred souls."
+        </p>
+        </h4>
+        </div>
+
         <Home_info />
         <Logoslider />
+        </div>
       </div>
     );
   }; 
 export default Home;
+

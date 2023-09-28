@@ -6,19 +6,19 @@ import image3 from '../images/default.png';
 
 const contentData = [
   {
-    imageSrc: image1,
+    imageSrc: 'https://img.freepik.com/free-vector/hand-drawn-world-mental-health-day_52683-44659.jpg?w=2000',
     title: 'Who We Are',
     text: 'In recent years, there has been increasing acknowledgement of the important role mental health plays in achieving global development goals.',
     link: 'https://www.who.int/health-topics/mental-health#tab=tab_1',
   },
   {
-    imageSrc: image2,
+    imageSrc: 'https://img.freepik.com/free-vector/mental-health-concept-illustration_114360-2038.jpg',
     title: 'Take Our Diagnostic Quizzes',
     text: 'WHO works with Member States and partners to improve the mental health of individuals and society at large.',
     link: 'https://www.who.int/health-topics/mental-health#tab=tab_3',
   },
   {
-    imageSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1kMMWmH_-WEw-_8xBBnyAYOrtIEUk7qprOQ&usqp=CAU',
+    imageSrc: 'https://img.freepik.com/premium-photo/paper-brain-stethoscope-background-mental-health-day-concept_943126-1854.jpg?w=826',
     title: 'Mental Disorders',
     text: 'In 2019, 1 in every 8 people, or 970 million people around the world were living with a mental disorder.',
     link: 'https://who.int/news-room/fact-sheets/detail/mental-disorders',
@@ -70,3 +70,4 @@ function Home_info() {
 }
 
 export default Home_info;
+

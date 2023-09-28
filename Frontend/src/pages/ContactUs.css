@@ -3,17 +3,17 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    background-image: url('https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png'); /* Replace with the actual path to your image */
+    background-image: url('https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-background-goo.jpg'); /* Replace with the actual path to your image */
     background-size: cover; /* Cover the entire container */
     background-position: center; /* Center the background image */
-    color:white; /* Set text color to white for better readability */
-    font-family: 'Arial', sans-serif;
+    color:#000000; /* Set text color to white for better readability */
+    font-family: 'Apple Chancery', 'cursive';
   }
   
   .contact-info {
     flex: 1;
     padding: 2rem;
-    background-image: url('https://media.istockphoto.com/id/1465352994/photo/abstract-digital-background.webp?b=1&s=170667a&w=0&k=20&c=fbQF3xro_gX0A06HcEYRjERIgQA1lKe6q_X-_xEfRus='); /* Replace with the actual path to your background image */
+    background-image: url('https://t4.ftcdn.net/jpg/05/08/85/65/360_F_508856527_j47VSpWgbNbECuiOa9kSUllJBuZ2V1hF.jpg'); /* Replace with the actual path to your background image */
   background-size: cover; /* Cover the entire element */
     background-color: white;
     border-radius: 10px;
@@ -28,7 +28,7 @@
   .address .icon {
     margin-right: 1rem;
     font-size: 1.2rem;
-    color: #00fafa; /* Icon color */
+    color: #000000; /* Icon color */
     
   }
   .address .icon:hover {
@@ -40,7 +40,7 @@
   .social-icons .icon {
     font-size: 1.5rem;
   margin-right: 1rem;
-  color: #00fafa; /* Icon color */
+  color: #000000; /* Icon color */
   transition: color 0.3s ease;
   }
   
@@ -52,17 +52,19 @@
   .contact-form {
     flex: 1;
     padding: 2rem;
-    background-image: url('https://media.istockphoto.com/id/1465352994/photo/abstract-digital-background.webp?b=1&s=170667a&w=0&k=20&c=fbQF3xro_gX0A06HcEYRjERIgQA1lKe6q_X-_xEfRus='); /* Replace with the actual path to your background image */
+    background-image: url('https://t4.ftcdn.net/jpg/05/08/85/65/360_F_508856527_j47VSpWgbNbECuiOa9kSUllJBuZ2V1hF.jpg'); /* Replace with the actual path to your background image */
   background-size: cover; /* Cover the entire element */
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
   }
   
   .contact-form h3 {
-    color:white;
+    color:#000000;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+    font-family: 'Apple Chancery', 'cursive';
   }
   
   .form-group {
@@ -71,7 +73,7 @@
   
   .form-group label {
     font-weight: bold;
-    color: #dedbdb;
+    color: #000000;
   }
   
   input[type="text"],
@@ -85,7 +87,7 @@
   }
   
   button[type="submit"] {
-    background-color: rgb(8, 9, 68);
+    background-color: #000000;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -93,10 +95,11 @@
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: 'Apple Chancery', 'cursive';
   }
   
   button[type="submit"]:hover {
-    background-color: #00fafa;
+    background-color: #ffcccc;
   }
 
   .contact-form,
