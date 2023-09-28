@@ -470,6 +470,8 @@ div h3 {
 .MemePage {
   text-align: center;
   width: 100%;
+  margin-top: 3.5em;
+  margin-bottom: 3.5em;
   background-image: url("./images/memeimg3.jpeg"); /* Replace with your image URL */
   background-size: 100%;
 }
