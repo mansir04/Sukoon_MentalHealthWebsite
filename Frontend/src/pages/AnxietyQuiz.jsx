@@ -78,7 +78,7 @@ const AnxietyTest = () => {
     
     <div className="container">
       <h1 className="heading-txt">Anxiety Test</h1>
-      <h3 className="subheading"> <center>attempt all questions for accurate results</center></h3>
+      
       
       <div>
         {questions.map((question, index) => (

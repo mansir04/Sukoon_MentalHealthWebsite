@@ -518,26 +518,40 @@ div h3 {
 }
 
 
-
-
-
 .Quiz .heading-txt {
   text-align: center;
-  color : rgb(195, 0, 255);
+  font-family:  sans-serif;
+  color : rgb(39, 6, 169);
+  font-family: Pacifico, cursive;
+  font-size: 48px;
   margin-bottom: 40px;
+  font-weight: bold;
   
 
 }
+.Quiz .quiz-row {
+  display: flex;
+  justify-content: center; /* Adjust this for spacing between quizzes */
+}
 
-.Quiz .subheading-txt {
+.Quiz .card {
+  flex-basis: calc(60% - 100px); 
+  margin-right: 30px;
+  margin-left: 30px;
+  width :100%;
+  color:#0c0047;
+}
+
+
+.Quiz .subheading-txt, .Quiz .end-note{
   text-align: center;
   color : rgb(255, 0, 170);
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 10;
 
 }
-
+ 
 
 
 
