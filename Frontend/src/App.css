@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Garamound", sans-serif;
 }
 
 .App {
@@ -61,12 +60,14 @@ body {
 
 .home-project-intro{
   margin-top: 4em;
-  font-size: 2em;
+  font-size: 2.5em;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 4em;
-  /* font-weight: bold; */
-  color: #15012f;
+  font-weight: bold;
+  justify-content: center;
+  color: rgb(1, 1, 75);
+  font-family: 'Candara';
 
 }
 
@@ -75,6 +76,10 @@ body {
   margin-top: 2em;
   margin-bottom: 2em;
   margin-left: 2%;
+  font-weight: bold;
+  justify-content: center;
+  color: rgb(1, 1, 75);
+  font-family: 'Candara';
 }
 
 nav {
@@ -903,6 +908,64 @@ b:hover {
     color: #000000;
   }
 
+  h1{
+    text-align: center;
+    background-color: lightcyan;
+    font-size: 40px;
+    font-weight: bold;
+    color: darkslategray;
+    font-family: Candara;
+  }
+  .initiatives-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px; /* Adjust the gap between rows and columns */
+  }
+  
+  .grid-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    align-items: center;
+  }
+  
+  .grid-text {
+    padding: 5px;
+    width: 550px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    font-weight: bold;
+    
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .grid-text p {
+    margin: 20px 70px;
+    font-size: 34px;
+    font-weight: bold;
+    justify-content: center;
+    font-family: 'Candara';
+  }
+  
+  .grid-text a {
+    display: block;
+    margin-top: 10px;
+    color: darkslategray;
+    font-size: 34px;
+  }
+  
+  .grid-image img {
+    width: 700px;
+    height: 600px;
+    background-color: lightcyan;
+    transition: opacity 0.5s ease-in-out;
+  }
+    
+    
+  
   
   
   
