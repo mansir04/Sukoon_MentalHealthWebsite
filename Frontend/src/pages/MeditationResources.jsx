@@ -1,5 +1,5 @@
 import React from 'react';
-import './Relax.css';
+import '../App.css';
 
 const MeditationResources = () => {
   const resources = [

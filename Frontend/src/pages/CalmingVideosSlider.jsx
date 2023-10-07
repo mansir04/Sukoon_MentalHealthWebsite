@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Relax.css';
+import '../App.css';
 
 const CalmingVideosSlider = () => {
   const [videos, setVideos] = useState([]);
