@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { signOut } from "firebase/auth";
 
 function Blogs({ isAuth }) {
-
   const [postLists, setPostList] = useState([]);
   const postsCollectionRef = collection(db, "posts");
 
@@ -14,10 +13,21 @@ function Blogs({ isAuth }) {
     await deleteDoc(postDoc);
   };
 
+  // Define an array of background colors in hex format
+  const backgroundColors = [
+    "#e8dff5", // Hex code
+    "#fce1e4", // Hex code
+    "#fcf4dd", // Hex code
+    "#ddedea", // Hex code
+    "#daeaf6", // Hex code
+    // "#DFEBEB", // Hex code
+    // Add more hex color codes as needed
+  ];
+
   useEffect(() => {
     const getPosts = async () => {
       const data = await getDocs(postsCollectionRef);
-      setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+      setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })).reverse()); // Reverse the order of posts
     };
 
     getPosts();
@@ -25,9 +35,12 @@ function Blogs({ isAuth }) {
 
   return (
     <div className="blogsPage">
-      {postLists.map((post) => {
+      {postLists.map((post, index) => {
+        // Assign background color from the array based on the index
+        const backgroundColor = backgroundColors[index % backgroundColors.length];
+
         return (
-          <div className="post" key={post.id}>
+          <div className="post" key={post.id} style={{ backgroundColor }}>
             <div className="postHeader">
               <div className="title">
                 <h1>{post.title}</h1>

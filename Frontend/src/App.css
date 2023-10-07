@@ -12,21 +12,21 @@ body {
   margin: 0%;
   font-family: Arial, Helvetica, sans-serif;
 }
-.home-allcontent{
+.home-allcontent {
   margin-top: 20px;
   margin-bottom: 50px;
 }
 
-.home-project-intro-heading{
- font-weight: bolder;
- font-size: 50px;
- margin-left: 15%;
- margin-right: 10%;
- margin-top: 1em;
- text-shadow: 1.5px 1.5px 1px #000;
+.home-project-intro-heading {
+  font-weight: bolder;
+  font-size: 50px;
+  margin-left: 15%;
+  margin-right: 10%;
+  margin-top: 1em;
+  text-shadow: 1.5px 1.5px 1px #000;
 }
 
-.home-project-intro-image img{
+.home-project-intro-image img {
   width: 80%;
   height: 30%;
   margin-left: 9%;
@@ -58,7 +58,7 @@ body {
   }
 }
 
-.home-project-intro{
+.home-project-intro {
   margin-top: 4em;
   font-size: 2.5em;
   margin-left: 5%;
@@ -67,11 +67,10 @@ body {
   font-weight: bold;
   justify-content: center;
   color: rgb(1, 1, 75);
-  font-family: 'Candara';
-
+  font-family: "Candara";
 }
 
-.home-project-intro-quote{
+.home-project-intro-quote {
   font-size: 50px;
   margin-top: 2em;
   margin-bottom: 2em;
@@ -79,7 +78,7 @@ body {
   font-weight: bold;
   justify-content: center;
   color: rgb(1, 1, 75);
-  font-family: 'Candara';
+  font-family: "Candara";
 }
 
 nav {
@@ -134,7 +133,7 @@ header {
   position: fixed; */
 }
 
-.logo img{
+.logo img {
   width: 50%;
   height: 10%;
   text-decoration: none;
@@ -178,7 +177,7 @@ header {
   align-items: center;
   gap: 3px; /* Adjust the spacing between "Create Post" and "Logout" as needed */
 }
-.LogOut-Button{
+.LogOut-Button {
   background-color: #ffffff; /* Change to your desired background color */
   color: #000000; /* Change to your desired text color */
   padding: 10px 20px; /* Adjust padding as needed */
@@ -203,7 +202,7 @@ button span {
 .menu-items button:hover {
   background-color: #ffffff;
   font-size: 25px;
-  color:#cc3852;
+  color: #cc3852;
 }
 
 .arrow::after {
@@ -242,7 +241,6 @@ button span {
   top: -7px;
 }
 
-
 .helpline-container {
   background-color: rgb(253, 239, 239);
   padding: 20px;
@@ -266,7 +264,6 @@ button span {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-
 }
 
 .content h2 {
@@ -316,7 +313,7 @@ button span {
 
 .random-joke-header {
   margin-top: 70px;
-  background-image: url('data:image/jpeg;base64,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');
+  background-image: url("data:image/jpeg;base64,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");
   /* background: linear-gradient(454deg, pink, orange); */
   padding: 30px; /* Increased padding for more height */
   color: black;
@@ -433,7 +430,6 @@ blockquote {
   width: 150px;
   margin-top: 2em;
   margin-bottom: 2em;
-
 }
 
 div h3 {
@@ -574,33 +570,31 @@ div h3 {
   cursor: pointer;
 }
 
-
 /* Reset some default browser styles */
 
-
-.OcdQuiz, .ADHDQuiz, .AnxietyQuiz , .DepressionQuiz , .Quiz {
+.OcdQuiz,
+.ADHDQuiz,
+.AnxietyQuiz,
+.DepressionQuiz,
+.Quiz {
   font-family: Arial, sans-serif;
 
   background-image: url("../src/images/mona-eendra-vC8wj_Kphak-unsplash.jpg");
-  background-size: cover; 
-  background-position:  center;
+  background-size: cover;
+  background-position: center;
 
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
 }
-
 
 .Quiz .heading-txt {
   text-align: center;
-  font-family:  sans-serif;
-  color : rgb(39, 6, 169);
+  font-family: sans-serif;
+  color: rgb(39, 6, 169);
   font-family: Pacifico, cursive;
   font-size: 48px;
   margin-bottom: 40px;
   font-weight: bold;
-  
-
 }
 .Quiz .quiz-row {
   display: flex;
@@ -608,52 +602,60 @@ div h3 {
 }
 
 .Quiz .card {
-  flex-basis: calc(60% - 100px); 
+  flex-basis: calc(60% - 100px);
   margin-right: 30px;
   margin-left: 30px;
-  width :100%;
-  color:#0c0047;
+  width: 100%;
+  color: #0c0047;
 }
 
-
-.Quiz .subheading-txt, .Quiz .end-note{
+.Quiz .subheading-txt,
+.Quiz .end-note {
   text-align: center;
-  color : rgb(255, 0, 170);
+  color: rgb(255, 0, 170);
   margin-bottom: 50px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 10;
-
 }
- 
 
-
-
-.OcdQuiz .container , .ADHDQuiz .container , .AnxietyQuiz .container , .DepressionQuiz .container {
+.OcdQuiz .container,
+.ADHDQuiz .container,
+.AnxietyQuiz .container,
+.DepressionQuiz .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
 
-.OcdQuiz .heading-txt, .AnxietyQuiz .heading-txt , .DepressionQuiz .heading-txt, .ADHDQuiz .heading-txt {
+.OcdQuiz .heading-txt,
+.AnxietyQuiz .heading-txt,
+.DepressionQuiz .heading-txt,
+.ADHDQuiz .heading-txt {
   text-align: center;
-  color : blue;
+  color: blue;
   margin-bottom: 20px;
 }
 
-.OcdQuiz  .question, .AnxietyQuiz .question , .DepressionQuiz .question, .ADHDQuiz .question  {
+.OcdQuiz .question,
+.AnxietyQuiz .question,
+.DepressionQuiz .question,
+.ADHDQuiz .question {
   font-size: 1.2em;
   margin-bottom: 10px;
 }
 
-
-
-.OcdQuiz .option-container ,.AnxietyQuiz .option-container , .DepressionQuiz .option-container, .ADHDQuiz .option-container {
+.OcdQuiz .option-container,
+.AnxietyQuiz .option-container,
+.DepressionQuiz .option-container,
+.ADHDQuiz .option-container {
   list-style: none;
   padding-left: 10;
-  color :#630a4a;
+  color: #630a4a;
 }
 
-.OcdQuiz .option .AnxietyQuiz .option , .DepressionQuiz .option, .ADHDQuiz .option {
+.OcdQuiz .option .AnxietyQuiz .option,
+.DepressionQuiz .option,
+.ADHDQuiz .option {
   margin-bottom: 10px;
 }
 
@@ -661,7 +663,7 @@ input[type="radio"] {
   margin-right: 5px;
 }
 
- .button {
+.button {
   display: block;
   margin: 20px auto;
   padding: 20px 50px;
@@ -688,7 +690,7 @@ button:hover {
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content:center
+  justify-content: center;
 }
 
 .card {
@@ -734,336 +736,324 @@ b:hover {
   background-color: #0056b3;
 }
 
+.createPostPage {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: grid;
+  place-items: center;
+}
 
+.createPostPage .cpContainer {
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  background-color: black;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
 
-  
-  .createPostPage {
-    width: 100%;
-    height: calc(100vh - 80px);
-    display: grid;
-    place-items: center;
-  }
-  
-  .createPostPage .cpContainer {
-    width: 500px;
-    height: auto;
-    padding: 20px;
-    background-color: black;
-    border-radius: 12px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .createPostPage .cpContainer h1 {
-    text-align: center;
-  }
-  
-  .createPostPage .cpContainer label {
-    font-size: 25px;
-  }
-  .createPostPage .cpContainer .inputGp {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .createPostPage .inputGp input,
-  .inputGp textarea {
-    font-size: 18px;
-    border: none;
-    border-radius: 2px;
-    padding: 5px;
-  }
-  
-  .createPostPage .inputGp input {
-    height: 40px;
-  }
-  .createPostPage .inputGp textarea {
-    height: 150px;
-  }
-  
-  .createPostPage .cpContainer button {
-    margin-top: 20px;
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-  }
+.createPostPage .cpContainer h1 {
+  text-align: center;
+}
 
-  .createPostPage input,
-  textarea {
-    margin-top: 5px;
-  }
-  
-  .loginPage {
-    width: 100%;
-    height: 28em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .loginPage p {
-    font-size: 30px;
-  }
-  
-  /* GOOGLE BUTTOn */
-  .loginPage .login-with-google-btn {
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    padding: 5px 16px 12px 42px;
-    border: none;
-    border-radius: 3px;
-    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
-    color: #757575;
-    font-size: 25px;
-    font-weight: 500;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
-    background-color: white;
-    background-repeat: no-repeat;
-    background-position: 12px 11px;
-  }
-  .loginPage .login-with-google-btn:hover {
-    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
-  }
-  .loginPage .login-with-google-btn:active {
-    background-color: #eeeeee;
-  }
-  .loginPage .login-with-google-btn:focus {
-    outline: none;
-    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25),
-      0 0 0 3px #c8dafc;
-  }
-  .loginPage .login-with-google-btn:disabled {
-    filter: grayscale(100%);
-    background-color: #ebebeb;
-    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
-    cursor: not-allowed;
-  }
+.createPostPage .cpContainer label {
+  font-size: 25px;
+}
+.createPostPage .cpContainer .inputGp {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
 
-  .loginPage button:hover {
-    background-color: #0056b3; /* Change to your desired hover color */
-  }
-  
-  .blogsPage {
-    width: 100%;
-    min-height: calc(100vh - 80px);
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-  }
-  
-  .blogsPage .post {
-    width: 600px;
-    height: auto;
-    max-height: 600px;
-    background-color: rgb(250, 250, 250);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 15px;
-  }
-  
-  .blogsPage .post .postHeader {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .blogsPage .postHeader .title {
-    flex: 50%;
-  }
-  .blogsPage .postHeader .deletePost {
-    flex: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  
-  .blogsPage .deletePost button {
-    border: none;
-  
-    background: none;
-    font-size: 30px;
-    cursor: pointer;
-  }
-  
-  .blogsPage .post .postTextContainer {
-    word-wrap: break-word;
-    height: auto;
-    max-height: 400px;
-    width: 100%;
-    overflow: hidden;
-    overflow-y: auto;
-  }
-  
-  .blogsPage .postAuthor{
-    color: #000000;
-  }
+.createPostPage .inputGp input,
+.inputGp textarea {
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+}
 
-  h1{
-    text-align: center;
-    background-color: lightcyan;
-    font-size: 40px;
-    font-weight: bold;
-    color: darkslategray;
-    font-family: Candara;
-  }
-  .initiatives-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0px; /* Adjust the gap between rows and columns */
-  }
-  
-  .grid-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0px;
-    align-items: center;
-  }
-  
-  .grid-text {
-    padding: 5px;
-    width: 550px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    
-    font-weight: bold;
-    
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .grid-text p {
-    margin: 20px 70px;
-    font-size: 34px;
-    font-weight: bold;
-    justify-content: center;
-    font-family: 'Candara';
-  }
-  
-  .grid-text a {
-    display: block;
-    margin-top: 10px;
-    color: darkslategray;
-    font-size: 34px;
-  }
-  
-  .grid-image img {
-    width: 700px;
-    height: 600px;
-    background-color: lightcyan;
-    transition: opacity 0.5s ease-in-out;
-  }
-  .iframe-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding-bottom: 56.25%;
-    overflow: hidden;
-    border-radius: 20px;
-  }
-  
-  .iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  
-  .calming-videos-slider {
-    text-align: center;
-    padding: 10px;
-  }
-  .calming-videos-slider h2 {
-    text-align: center;
-    font-size: 35px;
-    padding: 5px;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-  }
-  .video-list {
-    display: flex;
-    overflow-x: scroll;
-    gap: 10px;
-  }
-  
-  .video-card {
-    width: 500px; 
-    height: 400px;
-    border: none; 
-    padding: 10px;
-    text-align: center;
-    font-size: 10px;
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-  }
-  
-  .video-list::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .meditation-resources {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .resource-slider {
-    display: flex;
-    overflow-x: scroll;
-    gap: 20px;
-  }
-  
-  .meditation-resources h2 {
-    text-align: center;
-    font-size: 35px;
-    padding: 5px;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-  }
-  .resource-card {
-    width: 250px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 10px;
-    transition: transform 0.3s ease-in-out;
-    flex: 0 0 auto;
-    cursor: pointer;
-  }
-  
-  .resource-card img {
-    width: 100%;
-    border-radius: 5px;
-  }
-  
-  .resource-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .resource-slider::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .resource-card h3 {
-    font-size: 15px;
-    margin: 10px 10px;
-    color: black;
-  }
-  
-    
-    
-  
-  
-  
-  
+.createPostPage .inputGp input {
+  height: 40px;
+}
+.createPostPage .inputGp textarea {
+  height: 150px;
+}
 
+.createPostPage .cpContainer button {
+  margin-top: 20px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.createPostPage input,
+textarea {
+  margin-top: 5px;
+}
+
+.loginPage {
+  width: 100%;
+  height: 28em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginPage p {
+  font-size: 30px;
+}
+
+/* GOOGLE BUTTOn */
+.loginPage .login-with-google-btn {
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 5px 16px 12px 42px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  color: #757575;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 12px 11px;
+}
+.loginPage .login-with-google-btn:hover {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+.loginPage .login-with-google-btn:active {
+  background-color: #eeeeee;
+}
+.loginPage .login-with-google-btn:focus {
+  outline: none;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25),
+    0 0 0 3px #c8dafc;
+}
+.loginPage .login-with-google-btn:disabled {
+  filter: grayscale(100%);
+  background-color: #ebebeb;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+}
+
+.loginPage button:hover {
+  background-color: #0056b3; /* Change to your desired hover color */
+}
+
+.blogsPage {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.blogsPage .post {
+  width: 600px;
+  height: auto;
+  max-height: 600px;
+  background-color: rgb(250, 250, 250);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.blogsPage .post .postHeader {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.blogsPage .postHeader .title {
+  flex: 50%;
+}
+.blogsPage .postHeader .deletePost {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.blogsPage .deletePost button {
+  border: none;
+
+  background: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.blogsPage .post .postTextContainer {
+  word-wrap: break-word;
+  height: auto;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.blogsPage .postAuthor {
+  color: #000000;
+}
+
+h1 {
+  text-align: center;
+  background-color: lightcyan;
+  font-size: 40px;
+  font-weight: bold;
+  color: darkslategray;
+  font-family: Candara;
+}
+.initiatives-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0px; /* Adjust the gap between rows and columns */
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px;
+  align-items: center;
+}
+
+.grid-text {
+  padding: 5px;
+  width: 550px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  font-weight: bold;
+
+  transition: opacity 0.5s ease-in-out;
+}
+
+.grid-text p {
+  margin: 20px 70px;
+  font-size: 34px;
+  font-weight: bold;
+  justify-content: center;
+  font-family: "Candara";
+}
+
+.grid-text a {
+  display: block;
+  margin-top: 10px;
+  color: darkslategray;
+  font-size: 34px;
+}
+
+.grid-image img {
+  width: 700px;
+  height: 600px;
+  background-color: lightcyan;
+  transition: opacity 0.5s ease-in-out;
+}
+.iframe-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.calming-videos-slider {
+  text-align: center;
+  padding: 10px;
+}
+.calming-videos-slider h2 {
+  text-align: center;
+  font-size: 35px;
+  padding: 5px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+.video-list {
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+}
+
+.video-card {
+  width: 500px;
+  height: 400px;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  font-size: 10px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.video-list::-webkit-scrollbar {
+  display: none;
+}
+
+.meditation-resources {
+  text-align: center;
+  padding: 20px;
+}
+
+.resource-slider {
+  display: flex;
+  overflow-x: scroll;
+  gap: 20px;
+}
+
+.meditation-resources h2 {
+  text-align: center;
+  font-size: 35px;
+  padding: 5px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+.resource-card {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+
+.resource-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.resource-card:hover {
+  transform: scale(1.05);
+}
+
+.resource-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.resource-card h3 {
+  font-size: 15px;
+  margin: 10px 10px;
+  color: black;
+}
