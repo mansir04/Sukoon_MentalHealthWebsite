@@ -618,74 +618,201 @@ div h3 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 10;
 }
+/*sample for tue*/
+.ADHDQuiz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ /* background-image: linear-gradient(purple, rgb(238, 48, 238));
+  background-color: #e0253b; */
+  min-height: 100vh;
+  width: 100%;
+}
+.ADHDQuiz.body{
+  display: flex;
+  align-items: center;
+  justify-content: center;    
+   background-image: linear-gradient(purple,rgb(238, 48, 238)); 
+  background-color: #e0253b;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.ADHDQuiz .option-btn {
+  box-shadow: 0px 0px 4px 1px rgb(128, 123, 123);
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  margin: 5px;
+  min-height: 30px;
+  background-color: white;
+}
+.ADHDQuiz .checked{
+  background-color: rgb(179, 83, 179);
+  color:white;
+  box-shadow: 3px 3px 4px 1px rgb(78, 69, 78);
+}
+.ADHDQuiz.option-btn:hover{
+  background-color: rgb(212, 118, 212);
+  color:white;
+}
+
+
 
 .OcdQuiz .container,
 .ADHDQuiz .container,
 .AnxietyQuiz .container,
 .DepressionQuiz .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+    align-items: center;
+    flex-direction: column;
+    min-height: 400px;
+    width: 400px;
+    background-color: #fce1e4;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px 1px #333;  
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+   
 }
 
-.OcdQuiz .heading-txt,
-.AnxietyQuiz .heading-txt,
-.DepressionQuiz .heading-txt,
+/* Add these styles for .card elements 
+.OcdQuiz .container .card,
+.ADHDQuiz .container .card,
+.AnxietyQuiz .container .card,
+.DepressionQuiz .container .card {
+    width: 100%; /* Adjust as needed 
+    color: #0c0047;
+    /* Add any other styles for the .card here 
+}
+*/
+
+
+
+
 .ADHDQuiz .heading-txt {
   text-align: center;
-  color: blue;
+  color: rgb(32, 32, 82);
   margin-bottom: 20px;
+  font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;  
+    text-transform: uppercase;
 }
 
 .OcdQuiz .question,
 .AnxietyQuiz .question,
 .DepressionQuiz .question,
 .ADHDQuiz .question {
-  font-size: 1.2em;
   margin-bottom: 10px;
+  margin:8px;
+    box-shadow: 0px 0px 10px 1px #a2a3a3;
+    border-radius: 5px;
+    padding:5px;
+    font-size: large;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    min-width: 100%;
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .OcdQuiz .option-container,
 .AnxietyQuiz .option-container,
 .DepressionQuiz .option-container,
 .ADHDQuiz .option-container {
-  list-style: none;
-  padding-left: 10;
-  color: #630a4a;
+  display: flex;
+    flex-direction: column;
+    margin:6px 4px;    
+    width: 100%;
+    padding: 10px;
 }
 
-.OcdQuiz .option .AnxietyQuiz .option,
-.DepressionQuiz .option,
-.ADHDQuiz .option {
-  margin-bottom: 10px;
+.OcdQuiz .option-btn .AnxietyQuiz .option-btn,
+.DepressionQuiz .option-btn,
+.ADHDQuiz .option-btn {
+  box-shadow: 0px 0px 4px 1px rgb(128, 123, 123);
+    padding: 5px;
+    border-radius: 3px;
+    border:none;
+    outline: none;
+    transition: 0.3s;
+    margin: 5px;
+    min-height: 30px;
+    background-color: white;
 }
 
-input[type="radio"] {
-  margin-right: 5px;
+.OcdQuiz .checked .AnxietyQuiz .checked,
+.DepressionQuiz .checked,
+.ADHDQuiz .option-btnchecked{
+  background-color: rgb(179, 83, 179);
+  color:white;
+  box-shadow: 3px 3px 4px 1px rgb(78, 69, 78);
+}
+.OcdQuiz .option-btn:hover .AnxietyQuiz .option-btn:hover,
+.DepressionQuiz .option-btn :hover,
+.ADHDQuiz .option-btn button:hover {
+
+  background-color: rgb(212, 118, 212);
+  color:white;
 }
 
-.button {
-  display: block;
-  margin: 20px auto;
-  padding: 20px 50px;
-  background-color: #007bff;
-  color: rgb(255, 255, 255);
-  border: none;
-  cursor: pointer;
-  text-align: center;
+#next-button{
+  padding:10px;
+  border:none;
+  background-color: purple;
+  background-color: #276272;
+  color:white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px 1px rgb(127, 109, 109);
+  font-size: larger;
+  font-weight: bold;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: 0.2s;
+  width:100px;
+  position: relative;
+  left: 30px;
+  bottom: 15px;
 }
-
-button:hover {
-  background-color: #0056b3;
-}
-
-.hidden {
-  display: none;
+#next-button:active{
+  box-shadow:none;    
 }
 
 #score {
   margin-top: 100 px;
   text-align: center;
+}
+.show-score{
+  position: relative;
+  top:30%;
+  font-size: 40px;
+  text-align: left;  
+}
+
+
+
+
+/* Style for the submit button */
+#submit-button {
+display: none;
+}
+.OcdQuiz .button,
+.ADHDQuiz .button,
+.AnxietyQuiz .button,
+.DepressionQuiz .button {
+margin: 10px;
+padding: 10px 20px;
+font-size: 16px;
+background-color: #007bff; /* Change to your desired color */
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
 }
 
 .card-container {
@@ -694,7 +821,7 @@ button:hover {
   justify-content: center;
 }
 
-.card {
+/*.card {
   border: 1px solid #160202;
   border-radius: 26px;
   margin: 20px;
@@ -736,6 +863,7 @@ b {
 b:hover {
   background-color: #0056b3;
 }
+*/
 
 .createPostPage {
   width: 100%;
