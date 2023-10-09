@@ -129,8 +129,6 @@ header {
   max-width: 1600px;
   margin: 0 auto;
   padding: 10px 20px;
-  /* z-index: 999;
-  position: fixed; */
 }
 
 .logo img {
@@ -579,9 +577,10 @@ div h3 {
 .Quiz {
   font-family: Arial, sans-serif;
 
-  background-image: url("../src/images/mona-eendra-vC8wj_Kphak-unsplash.jpg");
+  /* background-image: url("../src/images/mona-eendra-vC8wj_Kphak-unsplash.jpg"); */
   background-size: cover;
   background-position: center;
+  background-color: #ffffff;
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -598,7 +597,9 @@ div h3 {
 }
 .Quiz .quiz-row {
   display: flex;
+  flex-direction: row;
   justify-content: center; /* Adjust this for spacing between quizzes */
+  flex-wrap: nowrap; /* This prevents items from wrapping to the next row */
 }
 
 .Quiz .card {
@@ -860,15 +861,17 @@ textarea {
 }
 
 .blogsPage .post {
-  width: 600px;
+  width: 900px;
   height: auto;
-  max-height: 600px;
+  /* max-height: 600px; */
   background-color: rgb(250, 250, 250);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: 20px;
   padding: 20px;
   border-radius: 15px;
+  border: 2px solid rgb(190, 188, 188); /* Add this line to create a black border */
 }
+
 
 .blogsPage .post .postHeader {
   display: flex;
@@ -878,9 +881,10 @@ textarea {
 
 .blogsPage .postHeader .title {
   flex: 50%;
+  text-decoration: underline;
 }
 .blogsPage .postHeader .deletePost {
-  flex: 50%;
+  flex: 10%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -888,19 +892,19 @@ textarea {
 
 .blogsPage .deletePost button {
   border: none;
-
   background: none;
   font-size: 30px;
   cursor: pointer;
 }
 
 .blogsPage .post .postTextContainer {
-  word-wrap: break-word;
-  height: auto;
-  max-height: 400px;
+  height: 100%; /* Adjust as needed */
+  max-height: 400px; /* Set a maximum height */
   width: 100%;
-  overflow: hidden;
-  overflow-y: auto;
+  font-size: 20px;
+  overflow: auto; /* Use auto to add scrollbars when content overflows */
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .blogsPage .postAuthor {
@@ -909,7 +913,7 @@ textarea {
 
 h1 {
   text-align: center;
-  background-color: lightcyan;
+  /* background-color: #ddedea; */
   font-size: 40px;
   font-weight: bold;
   color: darkslategray;

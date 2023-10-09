@@ -29,7 +29,7 @@ const Home = () => {
         </h3>
       </div>
         <div className='home-allcontent'>
-        <Design />
+        {/* <Design /> */}
         
         <div className='home-project-intro-heading'>
           <u></u>
@@ -53,9 +53,9 @@ const Home = () => {
         <div className="random-joke">
           <header className="random-joke-header">
             <blockquote>
-              <div className='joke-text'>
+              {/* <div className='joke-text'>
                 <p>Start Your Day With Us and a Smile 😊 </p>
-              </div>
+              </div> */}
               <p>{joke}</p>
             </blockquote>
           </header>
