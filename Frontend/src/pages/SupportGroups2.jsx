@@ -1,5 +1,5 @@
 import React from 'react';
-import './SupportGroups.css';
+import './App.css';
 
 
 const SupportGroups2 = () => {

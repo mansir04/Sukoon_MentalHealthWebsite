@@ -2,7 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import './MentalIllnessCarousel.css';
+import './App.css';
 
 const MentalIllnessCarousel = ({ images, readMoreLink }) => {
   return (
