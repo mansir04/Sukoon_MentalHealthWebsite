@@ -2,31 +2,30 @@ import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { auth } from "./firebase-config";
-
 import CreatePost from "../pages/CreatePost";
 import Login from "../pages/Login";
 import Blogs from "../pages/BlogsHome";
-import Layout from './Layout';
-import Home from '../pages/Home';
-import Help from '../pages/Help';
-import Articles from '../pages/Articles';
-import Anxiety from '../pages/Anxiety';
-import Depression from '../pages/Depression';
-import Ocd from '../pages/Ocd';
-import PanicDisorder from '../pages/PanicDisorder';
-import Initiatives from '../pages/Initiatives';
-import Quiz from '../pages/Quiz';
-import Relax from '../pages/Relax';
-import Memes from '../pages/Memes';
-import FAQs from '../pages/FAQs';
-import Volunteer from '../pages/Volunteer';
-import ContactUs from '../pages/ContactUs';
-import SignUp from '../pages/SignUp';
-import AnxietyQuiz from '../pages/AnxietyQuiz';
-import DepressionQuiz from '../pages/DepressionQuiz';
-import OCDQuiz from '../pages/OcdQuiz';
-import ADHDQuiz from '../pages/ADHDQuiz';
-import SupportGroupsMain from '../pages/SupportGroupsMain';
+import Layout from "./Layout";
+import Home from "../pages/Home";
+import Help from "../pages/Help";
+import Articles from "../pages/Articles";
+import Anxiety from "../pages/Anxiety";
+import Depression from "../pages/Depression";
+import Ocd from "../pages/Ocd";
+import PanicDisorder from "../pages/PanicDisorder";
+import Initiatives from "../pages/Initiatives";
+import Quiz from "../pages/Quiz";
+import Relax from "../pages/Relax";
+import Memes from "../pages/Memes";
+import FAQs from "../pages/FAQs";
+import Volunteer from "../pages/Volunteer";
+import ContactUs from "../pages/ContactUs";
+import SignUp from "../pages/SignUp";
+import AnxietyQuiz from "../pages/AnxietyQuiz";
+import DepressionQuiz from "../pages/DepressionQuiz";
+import OCDQuiz from "../pages/OcdQuiz";
+import ADHDQuiz from "../pages/ADHDQuiz";
+import SupportGroupsMain from "../pages/SupportGroupsMain";
 
 const App = () => {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
@@ -37,7 +36,7 @@ const App = () => {
       setIsAuth(false);
       window.location.pathname = "/login";
     });
-};
+  };
 
   return (
     <>
@@ -47,9 +46,9 @@ const App = () => {
           <Route path="help" element={<Help />} />
           <Route path="articles" element={<Articles />} />
           <Route path="anxiety" element={<Anxiety />} />
-          <Route path="depression" element={<Depression/>} />
-          <Route path="ocd" element={<Ocd/>} />
-          <Route path="panicdisorder" element={<PanicDisorder/>} />
+          <Route path="depression" element={<Depression />} />
+          <Route path="ocd" element={<Ocd />} />
+          <Route path="panicdisorder" element={<PanicDisorder />} />
           <Route path="initiatives" element={<Initiatives />} />
           <Route path="support-groups" element={<SupportGroupsMain />} />
           <Route path="blogs" element={<Blogs isAuth={isAuth} />} />

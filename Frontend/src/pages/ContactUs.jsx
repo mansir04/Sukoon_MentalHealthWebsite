@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import './App.css';
+// import './App.css';
 import 'font-awesome/css/font-awesome.min.css';
 
 const ContactUs = () => {
