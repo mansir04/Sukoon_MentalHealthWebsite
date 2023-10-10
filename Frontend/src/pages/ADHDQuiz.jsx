@@ -3,7 +3,6 @@ import AdhdResult from "../components/AdhdResult";
 import ".././App.css";
 
 
-
 const ADHDQuiz = () => {
   const questions = [
     {

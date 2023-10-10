@@ -1,7 +1,7 @@
 // AboutUs.js
 
 import React from 'react';
-import './Volunteer.css';
+// import './App.css';
 
 const founders = [
   {
@@ -19,7 +19,7 @@ const founders = [
   {
     name: 'Mansi Rawat',
     role: 'Founder & CEO',
-    image: 'jane-smith.jpg', // Replace with actual image file
+    image: 'https://i.pinimg.com/236x/f8/82/7c/f8827c23d94a549019b65527aa61b237.jpg', // Replace with actual image file
   },
   {
     name: 'Aayushi',

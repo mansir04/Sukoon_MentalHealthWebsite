@@ -2,14 +2,14 @@ const express = require("express");
 const axios = require("axios");
 const cors = require("cors");
 
-const app = express(); // Create the express app instance
+const app = express();
 const PORT = process.env.PORT || 5004;
 
 app.use(cors());
-app.use(express.json()); // Parse JSON-encoded bodies
-app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-// Define your memeTemplates array with valid template IDs
+// Define memeTemplates array with valid template IDs
 const memeTemplates = [
   { id: "aag", name: "Distracted Boyfriend" },
   { id: "bad", name: "Bad Luck Brian" },
@@ -26,7 +26,6 @@ const memeTemplates = [
   { id: "pikachu-surprised", name: "Pikachu Surprised" },
   { id: "mocking-spongebob", name: "Mocking SpongeBob" },
   { id: "roll-safe", name: "Roll Safe" },
-  // Add more meme templates here
   { id: "success", name: "Success Kid" },
   { id: "tenguy", name: "10 Guy" },
   { id: "toohigh", name: "The Rent Is Too Damn High" },
@@ -40,7 +39,6 @@ const memeTemplates = [
   { id: "wddth", name: "We Don't Do That Here" },
   { id: "whatyear", name: "What Year Is It?" },
   { id: "winter", name: "Winter is coming" },
-
   { id: "wkh", name: "Who Killed Hannibal" },
   { id: "woman-cat", name: "Woman Yelling at a Cat" },
   { id: "wonka", name: "Condescending Wonka" },
@@ -50,7 +48,6 @@ const memeTemplates = [
   { id: "yodawg", name: "Xzibit Yo Dawg" },
   { id: "yuno", name: "Y U NO Guy" },
   { id: "zero-wing", name: "All Your Base Are Belong to Us" },
-
   // Add more meme templates here
 ];
 

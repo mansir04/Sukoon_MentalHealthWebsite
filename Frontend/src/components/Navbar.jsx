@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { signOut } from "firebase/auth";
 import { auth, db } from "../components/firebase-config";
-import MenuItems from './MenuItems';
-import getMenuItems from '../menuItems';
-import '../App.css'
+import MenuItems from "./MenuItems";
+import getMenuItems from "../menuItems";
+import "../App.css";
 
 const Navbar = () => {
   // Call the getMenuItems function to get the menu items
@@ -43,25 +43,21 @@ const Navbar = () => {
       <ul className="menus">
         {menuItems.map((menu, index) => {
           const depthLevel = 0;
-          return (
-            <MenuItems
-              items={menu}
-              key={index}
-              depthLevel={depthLevel}
-            />
-          );
+          return <MenuItems items={menu} key={index} depthLevel={depthLevel} />;
         })}
       </ul>
       <div className="menu-items">
-      {!isAuth ? (
-        <a href="/login">Login</a>
-      ) : (
-        <div className="auth-links">
-          <a href="/createpost">CreatePost</a>
-          <button className='LogOut-Button' onClick={handleLogOutClick}>Logout</button>
-        </div>
-      )}
-    </div>
+        {!isAuth ? (
+          <a href="/login">Login</a>
+        ) : (
+          <div className="auth-links">
+            <a href="/createpost">CreatePost</a>
+            <button className="LogOut-Button" onClick={handleLogOutClick}>
+              Logout
+            </button>
+          </div>
+        )}
+      </div>
     </nav>
   );
 };

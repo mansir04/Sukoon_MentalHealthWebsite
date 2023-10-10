@@ -20,12 +20,14 @@ class Logoslider extends Component {
       autoplay: true,
       speed: 2000,
       autoplaySpeed: 2000,
-      cssEase: "linear"
+      cssEase: "linear",
     };
 
     return (
       <div className="home-logoslider-mainContainer">
-        <h2><u>NGOs WE SUPPORT</u></h2>
+        <h2>
+          <u>NGOs WE SUPPORT</u>
+        </h2>
         <Slider {...settings}>
           {logos.map((logoSrc, index) => (
             <div className="home-logoslider-container" key={index}>

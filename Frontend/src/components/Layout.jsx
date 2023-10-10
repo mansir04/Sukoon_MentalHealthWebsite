@@ -1,6 +1,6 @@
-import { Outlet } from 'react-router-dom';
-import Header from './Header';
-import Footer from './Footer';
+import { Outlet } from "react-router-dom";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const Layout = () => {
   return (
@@ -10,9 +10,9 @@ const Layout = () => {
         <Outlet />
       </div>
       <div className="footer-at-bottom">
-      {/* Your main content */}
-      <Footer />
-    </div>
+        {/* Your main content */}
+        <Footer />
+      </div>
     </div>
   );
 };

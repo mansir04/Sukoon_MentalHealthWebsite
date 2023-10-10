@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './MentalIllnessCarousel.css';
-import './Anxiety.css';
+import './MentalIllnessCarousel.jsx';
+// import './Anxiety.css';
 import { Link } from 'react-router-dom';
 
 
