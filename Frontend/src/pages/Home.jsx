@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Logoslider from '../components/Logoslider';
 import Home_info from '../components/Home_info';
-import Design from "../components/ParticleDesign";
-import img1 from '../images/jokeBGImg4.jpg';
+import img1 from '../images/homeimgnew.jpeg';
 
 const Home = () => {
   const [joke, setJoke] = useState('');
@@ -29,34 +28,21 @@ const Home = () => {
         </h3>
       </div>
         <div className='home-allcontent'>
-        {/* <Design /> */}
-        
-        <div className='home-project-intro-heading'>
-          <u></u>
-        </div>
-
-        <div className='home-project-intro'>
-        <p>
-        </p>
-        </div>
 
         <div className='home-project-intro-image'>
           <img src={img1}></img>
         </div>
-        
+
         <div className='home-project-intro-quote'>
-        <p>
+        <h3>
           "In the journey of life, may you find solace, laughter, and the companionship of kindred souls."
-        </p>
+        </h3>
         </div>
 
         <div className="random-joke">
           <header className="random-joke-header">
             <blockquote>
-              {/* <div className='joke-text'>
-                <p>Start Your Day With Us and a Smile 😊 </p>
-              </div> */}
-              <p>{joke}</p>
+              <h2>{joke}</h2>
             </blockquote>
           </header>
         </div>
@@ -69,15 +55,7 @@ const Home = () => {
         </div>
 
         <Home_info />
-        {/*
-        <div className='home-project-intro'>
-        <p>
-          The team at Sukoon realises we can't do it all. We actively select the right resources and 
-          organisations where you can find help other than our own to make sure you have everything 
-          you could ever need. 
-        </p>
-        </div>
-    */}
+
         <Logoslider />
         </div>
       </div>

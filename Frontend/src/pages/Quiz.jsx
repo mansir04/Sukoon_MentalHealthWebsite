@@ -10,9 +10,9 @@ const Quiz = () => {
   return (
     <div className="Quiz">
       <div className="container">
-        <h1 className="heading-txt">Take A Mental Health Test</h1>
+        <h1 >Take A Mental Health Test</h1>
         <center>
-          <h3 className="subheading-txt">
+          <h3 >
             Please attempt all the questions honestly for accurate results
           </h3>
         </center>

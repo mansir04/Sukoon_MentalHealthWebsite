@@ -43,7 +43,7 @@ function Blogs({ isAuth }) {
           <div className="post" key={post.id} style={{ backgroundColor }}>
             <div className="postHeader">
               <div className="title">
-                <h1>{post.title}</h1>
+                <h2>{post.title}</h2>
               </div>
               <div className="deletePost">
                 {isAuth && post.author.id === auth.currentUser.uid && (

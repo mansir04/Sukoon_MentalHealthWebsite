@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './Anxiety.css';
 
 const Ocd = () => {
   const [currentImage, setCurrentImage] = useState(0);

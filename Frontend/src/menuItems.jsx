@@ -24,10 +24,6 @@ const getMenuItems = () => {
       title: 'Resources',
       submenu: [
         {
-          title: 'News',
-          url: 'help',
-        },
-        {
           title: 'Articles',
           url: 'articles',
         },
@@ -65,10 +61,6 @@ const getMenuItems = () => {
     {
       title: 'Contact',
       submenu: [
-        {
-          title: 'FAQs',
-          url: 'faq',
-        },
         {
           title: 'Volunteer',
           url: 'volunteer',
