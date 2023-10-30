@@ -3,6 +3,7 @@ import AdhdResult from "../components/AdhdResult";
 import ".././App.css";
 
 
+
 const ADHDQuiz = () => {
   const questions = [
     {
@@ -100,8 +101,8 @@ const ADHDQuiz = () => {
       <div className="container">
         <h2>ADHD TEST</h2>
         {!isQuizOver ? (
-          <div>
-            <p >{questions[currentQuestion].question}</p>
+          <div className="Quiz-question-option">
+            <h3>{questions[currentQuestion].question}</h3>
             <p>
               {questions[currentQuestion].answers.map((answer, answerIndex) => (
                 <button

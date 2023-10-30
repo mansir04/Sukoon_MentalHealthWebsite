@@ -511,9 +511,13 @@ blockquote {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px; /* Add border-radius to create rounded corners */
   max-width: none;
-  width: 20%; /* Set the width to 20% for smaller cards */
-  height: 150px; /* Set the height to your desired value */
-  background-color: palevioletred; /* Set the background color to palevioletred */
+  width: 100%; /* Set the width to 20% for smaller cards */
+  height: 50%; /* Set the height to your desired value */
+  background-color: #ffffff; /* Set the background color to palevioletred */
+  margin-left: 5em;
+  margin-right: 3em;
+  margin-top: 5em;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-container {
@@ -522,12 +526,13 @@ blockquote {
   flex-wrap: nowrap; /* Allow multiple cards in a row */
   justify-content: center; /* Create space between cards */
   padding: 20px; /* Add padding for spacing */
+  
 }
 
 .card-image img {
   width: 100%;
-  height:80%;
-  object-fit: contain; /* Change to 'contain' for a better aspect ratio with variable image sizes */
+  height:20%;
+  /* object-fit: contain; Change to 'contain' for a better aspect ratio with variable image sizes */
 }
 
 .card-content {
@@ -536,12 +541,29 @@ blockquote {
   color: #333; /* Set text color to a dark color */
 }
 
+.Quiz .card-content button {
+  /* border: 1px solid #000000; Border width and color */
+  font-size: 1.25em;
+  box-shadow: 2px 2px 4px rgba(255, 132, 132, 0.2); /* Box shadow (adjust values as needed) */
+  border-radius: 10px; /* Rounded corners (adjust the radius as needed) */
+  transition: transform 0.2s, box-shadow 0.2s; /* Add transitions for a smooth hover effect */
+}
+
+.Quiz .card-content button:hover {
+  transform: scale(1.1); /* Scale the button up slightly on hover */
+  box-shadow: 4px 4px 6px rgba(215, 66, 66, 0.4); /* Change the box shadow on hover */
+}
 
 
-.Quiz .subheading-txt,
+.Quiz .card-content h2{
+  text-decoration: underline;
+  font-size: 1.75em;
+}
 .Quiz .end-note {
+  margin-top: 2.5em;
   text-align: center;
-  color: rgb(255, 0, 170);
+  color: red;
+  font-size: 1.25em;
   margin-bottom: 50px;
 }
 .OcdQuiz,
@@ -582,15 +604,15 @@ blockquote {
 
 .ADHDQuiz .OcdQuiz ,
 .AnxietyQuiz ,
-.DepressionQuiz  h2{
+.DepressionQuiz  .container h2{
   margin-bottom: 1em;
   text-decoration: underline;
 }
 
 .ADHDQuiz,.OcdQuiz ,
 .AnxietyQuiz ,
-.DepressionQuiz  p{
-  margin-bottom: 1em;
+.DepressionQuiz  .Quiz-question-option p{
+  margin-bottom: 3em;
 }
 
 .ADHDQuiz .option-btn, .OcdQuiz .option-btn,
@@ -603,7 +625,7 @@ blockquote {
   outline: none;
   transition: 0.3s;
   margin: 5px;
-  background-color: white;
+  opacity: 0.7;
 }
 .ADHDQuiz .checked,.OcdQuiz .checked,
 .AnxietyQuiz .checked,
@@ -632,6 +654,9 @@ blockquote {
   box-shadow: 4px 4px 20px 2px #333; /* Increase the box shadow for a more pronounced effect */
   overflow: hidden;
    padding: 30px; /*Increase the padding for more space inside the quiz box */
+   background-image: url("./images/createpostbg.jpeg");
+  margin-left: 10%;
+  height: 200%;
  
 }
 
@@ -654,6 +679,10 @@ blockquote {
   width: 100%; /* Make the buttons take up the full width of their container */
 }
 
+.ADHDQuiz button{
+  font-size: 1em;
+  font-weight:500;
+}
 /* Styles for the checked state and hover state (common for all quiz types) */
 .OcdQuiz .option-btn.checked,
 .ADHDQuiz .option-btn.checked,
@@ -663,8 +692,8 @@ blockquote {
 .ADHDQuiz .option-btn:hover,
 .AnxietyQuiz .option-btn:hover,
 .DepressionQuiz .option-btn:hover {
-  background-color: rgb(179, 83, 179);
-  color: white;
+  background-color: rgb(26, 2, 73);
+  color: rgb(255, 255, 255);
   box-shadow: 4px 4px 6px 2px rgb(78, 69, 78); /* Increase the box shadow */
 }
 
@@ -754,24 +783,24 @@ blockquote {
 
 
 
-p {
+/* p {
   margin: 10px 0;
-}
+} */
 
 /*button select */
-b {
+/* b {
   display: inline-block;
   background-color: red;
   color: pink;
   padding: 10px 20px;
   border-radius: 4px;
   text-decoration: none;
-}
+} */
 
-b:hover {
+/* b:hover {
   background-color: #0056b3;
 }
-*/
+*/ */
 
 .createPostPage {
   width: 100%;
