@@ -98,11 +98,11 @@ const ADHDQuiz = () => {
   return (
     <div className="ADHDQuiz">
       <div className="container">
-        <h1 className="heading-txt">ADHD TEST</h1>
+        <h2>ADHD TEST</h2>
         {!isQuizOver ? (
           <div>
-            <h2 className="question">{questions[currentQuestion].question}</h2>
-            <div className="option-container">
+            <p >{questions[currentQuestion].question}</p>
+            <p>
               {questions[currentQuestion].answers.map((answer, answerIndex) => (
                 <button
                   className={`option-btn ${
@@ -114,7 +114,7 @@ const ADHDQuiz = () => {
                   {answer}
                 </button>
               ))}
-            </div>
+            </p>
             <input type="button" value="Next" id="next-button" onClick={changeQuestion} />
           </div>
         ) : (

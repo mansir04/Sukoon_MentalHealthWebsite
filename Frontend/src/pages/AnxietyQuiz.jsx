@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AnxietyResult from "../components/AnxietyResult";
+import ".././App.css";
 
 const AnxietyTest = () => {
   const [questions, setQuestions] = useState([
