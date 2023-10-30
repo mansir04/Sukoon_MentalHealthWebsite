@@ -120,8 +120,8 @@ const ADHDQuiz = () => {
           </div>
         ) : (
           <div>
-            <h2 className="result-heading">Your Score</h2>
-            <p className="score">{score}</p>
+            <h3 className="result-heading">Your Score</h3>
+            <h3 className="score">{score}</h3>
             {isQuizOver && !showResult ?  (
             <button onClick={handleSubmit} id="submit-button"className='button'>
               Submit
@@ -129,7 +129,7 @@ const ADHDQuiz = () => {
               ) : null}
             
             {score > 1 ? <AdhdResult score={score} /> : null}
-            <button onClick={handleResetClick} className="button">
+            <button onClick={handleResetClick} id="retake-button" className="button">
               Restart Quiz
             </button>
           </div>

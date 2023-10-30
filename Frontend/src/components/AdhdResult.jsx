@@ -1,11 +1,7 @@
 import React, { useState } from "react";
-
+import ".././App.css";
 function AdhdResult(props) {
   return (
-    <>
-      <div className="show-score">
-        <p className="score"> Your Score:{props.score}</p>
-        <br />
         <p className="result">
           Result :
           {props.score > 0 && props.score <= 20
@@ -16,8 +12,8 @@ function AdhdResult(props) {
             ? "you have severe ADHD ,it  is characterized by many symptoms that are very disruptive to daily life. People with severe ADHD may need medication and other interventions to manage their symptoms and function in daily life"
             : a}{" "}
         </p>
-      </div>
-    </>
+      
+  
   );
 }
 

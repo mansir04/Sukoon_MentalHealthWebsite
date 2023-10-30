@@ -579,16 +579,16 @@ blockquote {
 }
 
 /* start from here */
-.ADHDQuiz .OcdQuiz ,
+/*.ADHDQuiz .OcdQuiz ,
 .AnxietyQuiz ,
 .DepressionQuiz  {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2em;
+  margin-bottom: 20em;
   margin-top: 2em;
   width: 100%;
-}
+} */
 
 .ADHDQuiz.OcdQuiz ,
 .AnxietyQuiz ,
@@ -701,8 +701,9 @@ blockquote {
 .OcdQuiz .question,
 .ADHDQuiz .question,
 .AnxietyQuiz .question,
-.DepressionQuiz .question {
-  margin: 10px;
+.DepressionQuiz .question h3 {
+  margin-top: 10px;
+  padding-top: 10%;
   box-shadow: 0px 0px 12px 2px #a2a3a3; /* Increase the box shadow */
   border-radius: 8px; /* Increase the border radius */
   padding: 10px; /* Increase the padding */
@@ -746,16 +747,9 @@ blockquote {
 #next-button:active {
   box-shadow: none;
 }
+#retake-button{
 
-#score {
-  margin-top: 100 px;
-  text-align: center;
-}
-.show-score {
-  position: relative;
-  top: 30%;
-  font-size: 40px;
-  text-align: left;
+align-items: center;
 }
 
 /* Style for the submit button */

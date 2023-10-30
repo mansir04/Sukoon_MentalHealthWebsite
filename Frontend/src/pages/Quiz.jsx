@@ -74,8 +74,8 @@ const Quiz = () => {
               <img src={quiz1Image} alt="Quiz 1" />
             </div>
             <div className="card-content">
-              <h2>Anxiety  Test</h2>
-              <p>Our quiz can help you determine whether you have Anxiety.</p>
+              <h2>PTSD Test</h2>
+              <p>Our quiz can help you determine whether you have PTSD.</p>
               <button><Link to="/anxiety-quiz">Take Quiz</Link></button>
             </div>
           </div>
@@ -84,8 +84,8 @@ const Quiz = () => {
               <img src={quiz3Image} alt="Quiz 1" />
             </div>
             <div className="card-content">
-              <h2>Anxiety  Test</h2>
-              <p>Our quiz can help you determine whether you have Anxiety.</p>
+              <h2>social Anxiety  Test</h2>
+              <p>Our quiz can help you determine whether you havesocial Anxiety.</p>
               <button><Link to="/anxiety-quiz">Take Quiz</Link></button>
             </div>
           </div>
