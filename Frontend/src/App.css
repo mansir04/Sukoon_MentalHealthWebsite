@@ -578,8 +578,8 @@ blockquote {
   background-attachment: fixed;
 }
 
-/* start from here */
-/*.ADHDQuiz .OcdQuiz ,
+/*start from here  */
+.ADHDQuiz .OcdQuiz ,
 .AnxietyQuiz ,
 .DepressionQuiz  {
   display: flex;
@@ -588,58 +588,34 @@ blockquote {
   margin-bottom: 20em;
   margin-top: 2em;
   width: 100%;
-} */
+} 
 
+.ADHDQuiz h2 {     /*this classname is common for all quizzes*/
+  text-decoration: underline;
+  margin-bottom: 1em;
+} 
+
+
+.ADHDQuiz h3 {
+  font-size: 1.75em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+/*
 .ADHDQuiz.OcdQuiz ,
 .AnxietyQuiz ,
 .DepressionQuiz body {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(rgb(247, 235, 247), rgb(238, 48, 238));
-  background-color: #e0253b;
+  justify-content: last baseline;
   min-height: 100vh;
   width: 100%;
-}
 
-.ADHDQuiz .OcdQuiz ,
-.AnxietyQuiz ,
-.DepressionQuiz  .container h2{
-  margin-bottom: 1em;
-  text-decoration: underline;
-}
-
-.ADHDQuiz,.OcdQuiz ,
-.AnxietyQuiz ,
-.DepressionQuiz  .Quiz-question-option p{
+.ADHDQuiz   p{
   margin-bottom: 3em;
 }
 
-.ADHDQuiz .option-btn, .OcdQuiz .option-btn,
-.AnxietyQuiz .option-btn,
-.DepressionQuiz .option-btn{
-  box-shadow: 0px 0px 4px 1px rgb(128, 123, 123);
-  padding: 5px;
-  border-radius: 3px;
-  border: none;
-  outline: none;
-  transition: 0.3s;
-  margin: 5px;
-  opacity: 0.7;
-}
-.ADHDQuiz .checked,.OcdQuiz .checked,
-.AnxietyQuiz .checked,
-.DepressionQuiz .checked {
-  background-color: rgb(179, 83, 179);
-  color:#0c0047;
-  box-shadow: 3px 3px 4px 1px rgb(78, 69, 78);
-}
-.ADHDQuiz.option-btn:hover,.OcdQuiz .option-btn:hover,
-.AnxietyQuiz .option-btn:hover,
-.DepressionQuiz .option-btn:hover {
-  background-color: rgb(212, 118, 212);
-  color:#007bff;
-}
+
 
 /* Common styles for all quiz containers */
 .OcdQuiz .container,
@@ -649,14 +625,14 @@ blockquote {
   align-items: center;
   min-height: 100%; /* Increase the min-height to make the quiz box taller */
   width: 80%; /* Increase the width to make the quiz box wider */
-  background-color: #fce1e4;
+  /*background-color: #fce1e4; */
   border-radius: 15px;
   box-shadow: 4px 4px 20px 2px #333; /* Increase the box shadow for a more pronounced effect */
   overflow: hidden;
-   padding: 30px; /*Increase the padding for more space inside the quiz box */
-   background-image: url("./images/createpostbg.jpeg");
+   padding: 40px; /*Increase the padding for more space inside the quiz box */
+   background-image: url("./images/try5.jpg"); 
   margin-left: 10%;
-  height: 200%;
+  height: 80%;
  
 }
 
@@ -666,8 +642,8 @@ blockquote {
 .ADHDQuiz .option-btn,
 .AnxietyQuiz .option-btn,
 .DepressionQuiz .option-btn {
-  box-shadow: 0px 0px 6px 1px rgb(128, 123, 123); /* Increase the box shadow */
-  padding: 10px; /* Increase the padding for a bigger button */
+  box-shadow: 0px 0px 6px 1px rgb(26, 24, 24); /* Increase the box shadow */
+  padding: 20px; /* Increase the padding for a bigger button */
   border-radius: 5px;
   border: none;
   outline: none;
@@ -677,9 +653,10 @@ blockquote {
   display: flex;
   flex-direction: column;
   width: 100%; /* Make the buttons take up the full width of their container */
+  opacity: 0.7;
 }
 
-.ADHDQuiz button{
+.ADHDQuiz,.AnxietyQuiz button{
   font-size: 1em;
   font-weight:500;
 }
@@ -695,25 +672,6 @@ blockquote {
   background-color: rgb(26, 2, 73);
   color: rgb(255, 255, 255);
   box-shadow: 4px 4px 6px 2px rgb(78, 69, 78); /* Increase the box shadow */
-}
-
-/* Adjust the question and option container styles for spacing and size */
-.OcdQuiz .question,
-.ADHDQuiz .question,
-.AnxietyQuiz .question,
-.DepressionQuiz .question h3 {
-  margin-top: 10px;
-  padding-top: 10%;
-  box-shadow: 0px 0px 12px 2px #a2a3a3; /* Increase the box shadow */
-  border-radius: 8px; /* Increase the border radius */
-  padding: 10px; /* Increase the padding */
-  font-weight: 600;
-  min-width: 100%;
-  min-height: 120px; /* Increase the min-height for taller questions */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
 }
 
 .OcdQuiz .option-container,
@@ -756,45 +714,22 @@ align-items: center;
 #submit-button {
   display: none;
 }
-
+/*restart btn css */
 .OcdQuiz .button,
 .ADHDQuiz .button,
 .AnxietyQuiz .button,
 .DepressionQuiz .button {
   margin: 10px;
   padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
+  font-size: 26px;
+  background-color: #9900ff;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+ margin-left: 40%;
   
 }
-
-
-
-
-
-
-/* p {
-  margin: 10px 0;
-} */
-
-/*button select */
-/* b {
-  display: inline-block;
-  background-color: red;
-  color: pink;
-  padding: 10px 20px;
-  border-radius: 4px;
-  text-decoration: none;
-} */
-
-/* b:hover {
-  background-color: #0056b3;
-}
-*/ */
 
 .createPostPage {
   width: 100%;

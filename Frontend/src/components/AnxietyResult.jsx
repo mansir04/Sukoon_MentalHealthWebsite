@@ -4,8 +4,7 @@ function AnxietyResult(props) {
   return (
     <>
       <div className="show-score">
-        <p className="score"> Your Score:{props.score}</p>
-        <br />
+      
         <p className="result">
           Result :
           {props.score > 40 && props.score <= 50
