@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Esteban", sans-serif;
+  font-family: "Verdana", sans-serif;
 }
 
 h1 {
@@ -488,32 +488,28 @@ blockquote {
   cursor: pointer;
 }
 
-
 /* quiz menu CSS */
 
-/* Updated styles for quiz cards */
 .Quiz .quiz-row {
   display: flex;
   flex-direction: row;
-  justify-content:center;
-  flex-wrap: nowrap; /* Keep it as 'nowrap' to ensure all cards are in the same row */
- 
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .Quiz .card {
   flex: 0 1 calc(20% - 10px);
-   /* Adjust the flex property to create five equal-width columns with some spacing */
-   flex-direction: row;
-  justify-content:center;
+  flex-direction: row;
+  justify-content: center;
   flex-wrap: nowrap;
-   margin: 10px; /* Reduce margin to add spacing between cards */
+  margin: 10px;
   overflow: hidden;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 10px; /* Add border-radius to create rounded corners */
+  border-radius: 10px;
   max-width: none;
-  width: 100%; /* Set the width to 20% for smaller cards */
-  height: 50%; /* Set the height to your desired value */
-  background-color: #ffffff; /* Set the background color to palevioletred */
+  width: 100%;
+  height: 50%;
+  background-color: #ffffff;
   margin-left: 5em;
   margin-right: 3em;
   margin-top: 5em;
@@ -523,39 +519,35 @@ blockquote {
 .card-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap; /* Allow multiple cards in a row */
-  justify-content: center; /* Create space between cards */
-  padding: 20px; /* Add padding for spacing */
-  
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 20px;
 }
 
 .card-image img {
   width: 100%;
-  height:20%;
-  /* object-fit: contain; Change to 'contain' for a better aspect ratio with variable image sizes */
+  height: 20%;
 }
 
 .card-content {
   padding: 20px;
-  text-align: center; /* Center the content */
-  color: #333; /* Set text color to a dark color */
+  text-align: center;
+  color: #333;
 }
 
 .Quiz .card-content button {
-  /* border: 1px solid #000000; Border width and color */
   font-size: 1.25em;
-  box-shadow: 2px 2px 4px rgba(255, 132, 132, 0.2); /* Box shadow (adjust values as needed) */
-  border-radius: 10px; /* Rounded corners (adjust the radius as needed) */
-  transition: transform 0.2s, box-shadow 0.2s; /* Add transitions for a smooth hover effect */
+  box-shadow: 2px 2px 4px rgba(255, 132, 132, 0.2);
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .Quiz .card-content button:hover {
-  transform: scale(1.1); /* Scale the button up slightly on hover */
-  box-shadow: 4px 4px 6px rgba(215, 66, 66, 0.4); /* Change the box shadow on hover */
+  transform: scale(1.1);
+  box-shadow: 4px 4px 6px rgba(215, 66, 66, 0.4);
 }
 
-
-.Quiz .card-content h2{
+.Quiz .card-content h2 {
   text-decoration: underline;
   font-size: 1.75em;
 }
@@ -567,13 +559,10 @@ blockquote {
   margin-bottom: 50px;
 }
 
-
-
-.commonQuiz h2 {     /*this classname is common for all quizzes*/
+.commonQuiz h2 {
   text-decoration: underline;
   margin-bottom: 1em;
-} 
-
+}
 
 .commonQuiz h3 {
   font-size: 1.75em;
@@ -581,69 +570,52 @@ blockquote {
   text-align: center;
 }
 
-.commonQuiz   p{
+.commonQuiz p {
   margin-bottom: 3em;
 }
 
-
-
-/* Common styles for all quiz containers */
-
-.commonQuiz .container{
+.commonQuiz .container {
+  margin-top: 2%;
+  margin-bottom: 5%;
   align-items: center;
-  min-height: 100%; /* Increase the min-height to make the quiz box taller */
-  width: 80%; /* Increase the width to make the quiz box wider */
-  /*background-color: #fce1e4; */
+  min-height: 100%;
+  width: 80%;
   border-radius: 15px;
-  box-shadow: 4px 4px 20px 2px #333; /* Increase the box shadow for a more pronounced effect */
   overflow: hidden;
-   padding: 40px; /*Increase the padding for more space inside the quiz box */
-   background-image: url("./images/try4.jpg"); 
+  padding: 40px;
+  background-image: url("./images/quizbg4nov.png");
   margin-left: 10%;
-  height: 80%;
- 
+  height: 70%;
 }
 
-/* changes between option buttons */
-/* Adjust the button styles to make them bigger */
-
-.commonQuiz .option-btn
-{
-  box-shadow: 0px 0px 6px 1px rgb(26, 24, 24); /* Increase the box shadow */
-  padding: 20px; /* Increase the padding for a bigger button */
+.commonQuiz .option-btn {
+  font-size: 1em;
+  box-shadow: 0px 0px 6px 1px rgb(26, 24, 24);
+  padding: 20px;
   border-radius: 5px;
   border: none;
   outline: none;
   transition: 0.3s;
-  margin: 10px; /* Increase the margin for more spacing between buttons */
+  margin: 10px;
   background-color: white;
   display: flex;
   flex-direction: column;
-  width: 100%; /* Make the buttons take up the full width of their container */
+  width: 100%;
   opacity: 0.7;
 }
 
-
-
-/* Styles for the checked state and hover state (common for all quiz types) */
-
 .commonQuiz .option-btn.checked,
-.commonQuiz .option-btn:hover
-
- {
+.commonQuiz .option-btn:hover {
   background-color: rgb(26, 2, 73);
   color: rgb(255, 255, 255);
-  box-shadow: 4px 4px 6px 2px rgb(78, 69, 78); /* Increase the box shadow */
+  box-shadow: 4px 4px 6px 2px rgb(78, 69, 78);
 }
 
-
-.commonQuiz .option-container
- {
+.commonQuiz .option-container {
   display: flex;
-  flex-direction: column; /* Display options in a column */
+  flex-direction: column;
   margin: 10px;
-  padding: 10px; /* Increase the padding for more spacing between options */
-  
+  padding: 10px;
 }
 
 #next-button {
@@ -666,42 +638,53 @@ blockquote {
 #next-button:active {
   box-shadow: none;
 }
-#retake-button{
-
-align-items: center;
+#retake-button {
+  align-items: center;
 }
 
-/* Style for the submit button */
 #submit-button {
   display: none;
 }
-/*restart btn css */
+
 .commonQuiz .button {
   margin: 10px;
   padding: 10px 20px;
   font-size: 26px;
-  background-color: #9900ff;
-  color: #fff;
+  background-color: #276272;
+  color: #fbfbfb;
   border: none;
   border-radius: 5px;
   cursor: pointer;
- margin-left: 40%;
-  
+  margin-left: 40%;
+}
+
+.commonQuiz .score {
+  font-size: 5em;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.show-score p {
+  font-size: 2em;
+}
+
+.commonQuiz .result-heading {
+  font-size: 3em;
 }
 
 .createPostPage {
   width: 100%;
-  height: calc(100vh - 80px);
+  height: auto;
   display: grid;
   place-items: center;
 }
 
 .createPostPage .cpContainer {
+  margin-top: 4em;
+  margin-bottom: 4em;
   width: 70%;
   height: auto;
   padding: 20px;
-  background-color: #a488cc;
-  background-image: url("https://i.pinimg.com/564x/66/9d/b0/669db07f0afb91f78a6d44daa4a994da.jpg");
+  background-image: url("./images/quiz1bg4nov.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 12px;
@@ -711,44 +694,51 @@ align-items: center;
 }
 
 .createPostPage .cpContainer h1 {
+  margin-top: 2%;
   text-align: center;
   text-decoration: underline;
 }
 
 .createPostPage .cpContainer label {
-  font-size: 25px;
+  margin-top: 2%;
+  font-size: 2em;
   color: #000000;
 }
 
 .createPostPage .cpContainer .inputGp {
-  margin-top: 30px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
 }
 
 .createPostPage .inputGp input,
 .createPostPage .inputGp textarea {
-  font-size: 18px;
+  font-size: 2em;
   opacity: 0.7;
-  border-radius: 2px;
-  padding: 5px;
-}
-
-.createPostPage .inputGp input {
-  height: 40px;
+  padding: 7px;
 }
 
 .createPostPage .inputGp textarea {
-  height: 150px;
+  font-size: 2em;
+  height: 250px;
 }
 
 .createPostPage .cpContainer button {
-  margin-top: 20px;
-  height: 40px;
+  padding: 10px;
+  border: none;
+  background-color: purple;
+  background-color: #276272;
+  color: white;
   border-radius: 5px;
-  opacity: 1;
-  cursor: pointer;
-  font-size: 18px;
+  font-size: 1.5em;
+  font-weight: bold;
+  transition: 0.2s;
+  width: 60%;
+  left: 30px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 20%;
+  bottom: 15px;
 }
 
 .createPostPage input,
@@ -804,7 +794,7 @@ align-items: center;
 }
 
 .loginPage button:hover {
-  background-color: #0056b3; /* Change to your desired hover color */
+  background-color: #0056b3;
 }
 
 .blogsPage {
@@ -820,13 +810,12 @@ align-items: center;
 .blogsPage .post {
   width: 900px;
   height: auto;
-  /* max-height: 600px; */
   background-color: rgb(250, 250, 250);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   margin: 20px;
   padding: 20px;
   border-radius: 15px;
-  border: 2px solid rgb(190, 188, 188); /* Add this line to create a black border */
+  border: 2px solid rgb(190, 188, 188);
 }
 
 .blogsPage .post .postHeader {
@@ -870,7 +859,7 @@ align-items: center;
 .initiatives-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0px; /* Adjust the gap between rows and columns */
+  gap: 0px;
 }
 
 .grid-row {
@@ -1055,30 +1044,28 @@ align-items: center;
   transform: scale(1.1);
 }
 
-/* Left arrow */
 .prev-button {
-  float: left; /* Float left for the previous button */
+  float: left;
 }
 
-/* Right arrow */
 .next-button {
-  float: right; /* Float right for the next button */
+  float: right;
 }
 
 .image-container {
   position: relative;
-  width: 100%; /* Set a fixed width for the container */
-  max-width: 600px; /* Adjust the max-width as needed */
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
   overflow: hidden;
-  text-align: center; /* Center the image and buttons horizontally */
+  text-align: center;
 }
 
 .large-image {
-  width: 100%; /* Make the image fill the container width */
+  width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto; /* Center the image horizontally within the container */
+  margin: 0 auto;
 }
 
 /*contact us */
@@ -1089,17 +1076,16 @@ align-items: center;
   align-items: center;
   padding: 2rem;
   background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-background-goo.jpg"); /* Replace with the actual path to your image */
-  background-size: cover; /* Cover the entire container */
-  background-position: center; /* Center the background image */
-  color: #000000; /* Set text color to white for better readability */
-  /* font-family: 'Apple Chancery', 'cursive'; */
+  background-size: cover;
+  background-position: center;
+  color: #000000;
 }
 
 .contact-info {
   flex: 1;
   padding: 2rem;
   background-image: url("https://t4.ftcdn.net/jpg/05/08/85/65/360_F_508856527_j47VSpWgbNbECuiOa9kSUllJBuZ2V1hF.jpg"); /* Replace with the actual path to your background image */
-  background-size: cover; /* Cover the entire element */
+  background-size: cover;
   background-color: white;
   border-radius: 10px;
 }
@@ -1113,10 +1099,10 @@ align-items: center;
 .address .icon {
   margin-right: 1rem;
   font-size: 1.2rem;
-  color: #000000; /* Icon color */
+  color: #000000;
 }
 .address .icon:hover {
-  color: #007bff; /* Change icon color on hover */
+  color: #007bff;
 }
 
 .social-icons .icon {

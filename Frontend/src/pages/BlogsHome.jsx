@@ -13,15 +13,13 @@ function Blogs({ isAuth }) {
     await deleteDoc(postDoc);
   };
 
-  // Define an array of background colors in hex format
   const backgroundColors = [
-    "#e8dff5", // Hex code
-    "#fce1e4", // Hex code
-    "#fcf4dd", // Hex code
-    "#ddedea", // Hex code
-    "#daeaf6", // Hex code
-    // "#DFEBEB", // Hex code
-    // Add more hex color codes as needed
+    "#e8dff5", 
+    "#fce1e4", 
+    "#fcf4dd", 
+    "#ddedea", 
+    "#daeaf6", 
+
   ];
 
   useEffect(() => {
@@ -36,7 +34,7 @@ function Blogs({ isAuth }) {
   return (
     <div className="blogsPage">
       {postLists.map((post, index) => {
-        // Assign background color from the array based on the index
+        
         const backgroundColor = backgroundColors[index % backgroundColors.length];
 
         return (

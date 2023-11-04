@@ -3,10 +3,8 @@ import React, { useState } from "react";
 function OcdResult(props) {
   return (
     <>
-      <div className="show-score">
-        
-        <p className="result">
-          Result :
+      <div className="show-score">        
+        <p>
           {props.score > 0 && props.score <= 10
             ? "Subclinical OCD: Scores of 0-10 indicate subclinical OCD. This means that the person has some OCD symptoms, but they are not severe enough to cause significant distress or impairment in daily life.."
             : props.score > 10 && props.score <= 20
