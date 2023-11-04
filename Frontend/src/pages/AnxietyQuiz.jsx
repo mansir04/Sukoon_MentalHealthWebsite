@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import AnxietyResult from "../components/AnxietyResult";
+import {AnxietyResult} from "../components/QuizResult";
 import ".././App.css";
 
 const AnxietyQuiz = () => {

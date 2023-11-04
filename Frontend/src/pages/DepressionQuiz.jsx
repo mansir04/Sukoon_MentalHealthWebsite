@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import DepressionResult from "../components/DepressionResult";
+import {DepressionResult} from "../components/QuizResult";
 import ".././App.css";
 
 
