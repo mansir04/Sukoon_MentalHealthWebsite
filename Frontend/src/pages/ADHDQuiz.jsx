@@ -97,7 +97,7 @@ const ADHDQuiz = () => {
     
   }; 
   return (
-    <div className="ADHDQuiz">
+    <div className="commonQuiz">
       <div className="container">
         <h2>ADHD TEST</h2>
         {!isQuizOver ? (

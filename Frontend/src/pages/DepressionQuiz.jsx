@@ -92,7 +92,7 @@ const DepressionQuiz = () => {
     
   }; 
   return (
-    <div className="ADHDQuiz">
+    <div className="commonQuiz">
       <div className="container">
         <h2>DEPRESSION TEST</h2>
         {!isQuizOver ? (

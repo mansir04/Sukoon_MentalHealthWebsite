@@ -566,62 +566,30 @@ blockquote {
   font-size: 1.25em;
   margin-bottom: 50px;
 }
-.OcdQuiz,
-.ADHDQuiz,
-.AnxietyQuiz,
-.DepressionQuiz,
-.Quiz {
-  background-size: cover;
-  background-position: center;
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 
-/*start from here  */
-.ADHDQuiz .OcdQuiz ,
-.AnxietyQuiz ,
-.DepressionQuiz  {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20em;
-  margin-top: 2em;
-  width: 100%;
-} 
 
-.ADHDQuiz h2 {     /*this classname is common for all quizzes*/
+
+.commonQuiz h2 {     /*this classname is common for all quizzes*/
   text-decoration: underline;
   margin-bottom: 1em;
 } 
 
 
-.ADHDQuiz h3 {
+.commonQuiz h3 {
   font-size: 1.75em;
   margin-bottom: 2em;
   text-align: center;
 }
-/*
-.ADHDQuiz.OcdQuiz ,
-.AnxietyQuiz ,
-.DepressionQuiz body {
-  display: flex;
-  align-items: center;
-  justify-content: last baseline;
-  min-height: 100vh;
-  width: 100%;
 
-.ADHDQuiz   p{
+.commonQuiz   p{
   margin-bottom: 3em;
 }
 
 
 
 /* Common styles for all quiz containers */
-.OcdQuiz .container,
-.ADHDQuiz .container,
-.AnxietyQuiz .container,
-.DepressionQuiz .container {
+
+.commonQuiz .container{
   align-items: center;
   min-height: 100%; /* Increase the min-height to make the quiz box taller */
   width: 80%; /* Increase the width to make the quiz box wider */
@@ -638,10 +606,9 @@ blockquote {
 
 /* changes between option buttons */
 /* Adjust the button styles to make them bigger */
-.OcdQuiz .option-btn,
-.ADHDQuiz .option-btn,
-.AnxietyQuiz .option-btn,
-.DepressionQuiz .option-btn {
+
+.commonQuiz .option-btn
+{
   box-shadow: 0px 0px 6px 1px rgb(26, 24, 24); /* Increase the box shadow */
   padding: 20px; /* Increase the padding for a bigger button */
   border-radius: 5px;
@@ -656,28 +623,22 @@ blockquote {
   opacity: 0.7;
 }
 
-.ADHDQuiz,.AnxietyQuiz button{
-  font-size: 1em;
-  font-weight:500;
-}
+
+
 /* Styles for the checked state and hover state (common for all quiz types) */
-.OcdQuiz .option-btn.checked,
-.ADHDQuiz .option-btn.checked,
-.AnxietyQuiz .option-btn.checked,
-.DepressionQuiz .option-btn.checked,
-.OcdQuiz .option-btn:hover,
-.ADHDQuiz .option-btn:hover,
-.AnxietyQuiz .option-btn:hover,
-.DepressionQuiz .option-btn:hover {
+
+.commonQuiz .option-btn.checked,
+.commonQuiz .option-btn:hover
+
+ {
   background-color: rgb(26, 2, 73);
   color: rgb(255, 255, 255);
   box-shadow: 4px 4px 6px 2px rgb(78, 69, 78); /* Increase the box shadow */
 }
 
-.OcdQuiz .option-container,
-.ADHDQuiz .option-container,
-.AnxietyQuiz .option-container,
-.DepressionQuiz .option-container {
+
+.commonQuiz .option-container
+ {
   display: flex;
   flex-direction: column; /* Display options in a column */
   margin: 10px;
@@ -715,10 +676,7 @@ align-items: center;
   display: none;
 }
 /*restart btn css */
-.OcdQuiz .button,
-.ADHDQuiz .button,
-.AnxietyQuiz .button,
-.DepressionQuiz .button {
+.commonQuiz .button {
   margin: 10px;
   padding: 10px 20px;
   font-size: 26px;

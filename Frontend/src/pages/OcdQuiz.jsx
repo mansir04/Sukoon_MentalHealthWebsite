@@ -86,7 +86,7 @@ function OcdQuiz() {
     
   }; 
   return (
-    <div className="ADHDQuiz">
+    <div className="commonQuiz">
       <div className="container">
         <h2>OCD TEST</h2>
         {!isQuizOver ? (
