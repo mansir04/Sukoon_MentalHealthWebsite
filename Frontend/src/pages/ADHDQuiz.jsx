@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import AdhdResult from "../components/AdhdResult";
+import {AdhdResult} from "../components/QuizResult";
 import ".././App.css";
+
 
 
 const ADHDQuiz = () => {
@@ -96,13 +97,13 @@ const ADHDQuiz = () => {
     
   }; 
   return (
-    <div className="ADHDQuiz">
+    <div className="commonQuiz">
       <div className="container">
-        <h1 className="heading-txt">ADHD TEST</h1>
+        <h2>ADHD TEST</h2>
         {!isQuizOver ? (
-          <div>
-            <h2 className="question">{questions[currentQuestion].question}</h2>
-            <div className="option-container">
+          <div className="Quiz-question-option">
+            <h3>{questions[currentQuestion].question}</h3>
+            <p>
               {questions[currentQuestion].answers.map((answer, answerIndex) => (
                 <button
                   className={`option-btn ${
@@ -114,13 +115,13 @@ const ADHDQuiz = () => {
                   {answer}
                 </button>
               ))}
-            </div>
+            </p>
             <input type="button" value="Next" id="next-button" onClick={changeQuestion} />
           </div>
         ) : (
           <div>
-            <h2 className="result-heading">Your Score</h2>
-            <p className="score">{score}</p>
+            <h2 className="result-heading">Result</h2>
+            <h2 className="score">{score}</h2>
             {isQuizOver && !showResult ?  (
             <button onClick={handleSubmit} id="submit-button"className='button'>
               Submit
@@ -128,7 +129,7 @@ const ADHDQuiz = () => {
               ) : null}
             
             {score > 1 ? <AdhdResult score={score} /> : null}
-            <button onClick={handleResetClick} className="button">
+            <button onClick={handleResetClick} id="retake-button" className="button">
               Restart Quiz
             </button>
           </div>
