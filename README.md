@@ -1,7 +1,7 @@
 
-# Sukoon - A Website related to Mental Health Issues
+# MentalHealthMERN
 
-Sukoon is a full stack project on the theme of 'Mental Health' to raise awareness and provide resources regarding the same. 'Sukoon' is a Hindi word which translates to 'Peace' in  the English language.  
+This is a MERN stack project on the theme of 'Mental Health'.  
 
 By dedicating our website to this theme, we aim to break the stigma surrounding mental health issues and provide a safe space for individuals to learn, share their experiences, and find resources that can help them navigate through their mental health journey.
 
@@ -13,12 +13,12 @@ The foundation of this project is our unwavering belief that every individual de
 
 ## Project Status
 
-Please note that Sukoon is an ongoing project. Features and the technology stack may evolve as development progresses. Any updates or changes will be reflected in the README file to keep you informed.
+Please note that MentalHealthMERN is an ongoing project. Features and the technology stack may evolve as development progresses. Any updates or changes will be reflected in the README file to keep you informed.
 ## Tech Stack
 
 **Client:** HTML, CSS, React.Js
 
-**Server:** Node.Js, Express, Firebase
+**Server:** Node.Js, Express, MongoDB
 
 **APIs:** JokeAPI, MemeGen API
 
