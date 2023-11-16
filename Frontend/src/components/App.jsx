@@ -12,6 +12,10 @@ import Anxiety from "../pages/Anxiety";
 import Depression from "../pages/Depression";
 import Ocd from "../pages/Ocd";
 import PanicDisorder from "../pages/PanicDisorder";
+import BipolarArticle from "../pages/BipolarArticle";
+import Schizophrenia from "../pages/Schizophrenia";
+import Ptsd from "../pages/Ptsd";
+import Psychosis from "../pages/Psychosis";
 import Initiatives from "../pages/Initiatives";
 import Quiz from "../pages/Quiz";
 import Relax from "../pages/Relax";
@@ -46,6 +50,10 @@ const App = () => {
           <Route path="depression" element={<Depression />} />
           <Route path="ocd" element={<Ocd />} />
           <Route path="panicdisorder" element={<PanicDisorder />} />
+          <Route path="bipolar-article" element={<BipolarArticle />} />
+          <Route path="schizophrenia" element={<Schizophrenia />} />
+          <Route path="ptsd" element={<Ptsd />} />
+          <Route path="psychosis" element={<Psychosis />} />
           <Route path="initiatives" element={<Initiatives />} />
           <Route path="support-groups" element={<SupportGroupsMain />} />
           <Route path="blogs" element={<Blogs isAuth={isAuth} />} />
