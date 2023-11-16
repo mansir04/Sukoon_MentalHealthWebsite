@@ -1202,18 +1202,24 @@ button[type="submit"]:hover {
 }
 
 .carousel-item {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 20px;
-  text-align: center;
+  overflow: hidden;
   background-color: #fff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-item img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.carousel-content {
+  padding: 20px;
 }
 
 .carousel-item p {
@@ -1222,10 +1228,11 @@ button[type="submit"]:hover {
 }
 
 .read-more {
-  display: inline-block;
+  align-self: flex-end;
+  margin-top: auto;
   padding: 5px 10px;
   background-color: #ffffff;
-  color: #fff;
+  color: #000; /* Adjust text color for better visibility */
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;

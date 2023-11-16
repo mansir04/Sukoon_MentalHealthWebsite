@@ -13,13 +13,13 @@ const founders = [
   {
     name: 'Shaheera Fatima',
     role: 'Founder & CEO',
-    image: 'https://i.pinimg.com/564x/69/5c/3c/695c3cee049e454e65b9c90c6ae1a29f.jpg', // Replace with actual image file
+    image: 'https://i.pinimg.com/236x/69/5c/3c/695c3cee049e454e65b9c90c6ae1a29f.jpg', // Replace with actual image file
   },
 
   {
     name: 'Mansi Rawat',
     role: 'Founder & CEO',
-    image: 'https://i.pinimg.com/236x/f8/82/7c/f8827c23d94a549019b65527aa61b237.jpg', // Replace with actual image file
+    image: 'https://i.pinimg.com/236x/43/97/2e/43972ee941de6b988bebbc64741a1b5c.jpg', // Replace with actual image file
   },
   {
     name: 'Aayushi',
