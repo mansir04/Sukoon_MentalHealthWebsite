@@ -1,7 +1,7 @@
 
-# MentalHealthMERN
+# Sukoon - A Website related to Mental Health Disorders
 
-This is a MERN stack project on the theme of 'Mental Health'.  
+'Sukoon' is a Hindi word which translates to 'Peace' in  the English language. It is a full stack project on the theme of 'Mental Health ' built with the aim to act as a fully comprehensive website to raise awareness and provide resources regarding all sorts of issues related to the same.   
 
 By dedicating our website to this theme, we aim to break the stigma surrounding mental health issues and provide a safe space for individuals to learn, share their experiences, and find resources that can help them navigate through their mental health journey.
 
@@ -13,12 +13,12 @@ The foundation of this project is our unwavering belief that every individual de
 
 ## Project Status
 
-Please note that MentalHealthMERN is an ongoing project. Features and the technology stack may evolve as development progresses. Any updates or changes will be reflected in the README file to keep you informed.
+Please note that Sukoon is an ongoing project. Features and the technology stack may evolve as development progresses. Any updates or changes will be reflected in the README file to keep you informed.
 ## Tech Stack
 
 **Client:** HTML, CSS, React.Js
 
-**Server:** Node.Js, Express, MongoDB
+**Server:** Node.Js, Express, Firebase
 
 **APIs:** JokeAPI, MemeGen API
 
@@ -43,7 +43,7 @@ Go to the project directory
   cd MentalHealthMERN
 ```
 
-Go to the Backend/Frontend folder
+Split the terminal and go to the Backend/Frontend folder
 
 ```bash
   cd Backend
@@ -56,13 +56,16 @@ Install dependencies in the respective directories
   npm install
 ```
 
+You will have to setup your firebase account and make a firebase.jsx file in the components folder. This will contain your firebase 
+configuration. You will have to setup a database and google authentication in the firebase console. 
+
 Start the server in Backend folder
 
 ```bash
   node server.js
 ```
 
-Run the application in Frontend folder on localhost
+Run the application in Frontend folder on your localhost
 
 ```bash
   npm run dev
