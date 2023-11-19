@@ -3,47 +3,41 @@ import React, { useEffect, useRef } from 'react';
 const MentalHealthInitiative = ({ text, image, link, isTextOnLeft, backgroundColor }) => {
   const elementRef = useRef(null);
 
-  useEffect(() => {
-    const element = elementRef.current;
-    if (element) {
-      setTimeout(() => {
-        element.classList.add('show-animation');
-      }, 100);
-    }
-  }, []);
-
   const renderFormattedText = () => {
     const parts = text.split("[italic]");
     return (
-      <p>
+      <>
         {parts.map((part, index) =>
           index % 2 === 0 ? (
-            part 
+            <span key={index}>{part}</span>
           ) : (
-            <span style={{ fontStyle: 'italic' }}>
+            <span key={index} style={{ fontStyle: 'italic' }}>
               <a href={link} target="_blank" rel="noopener noreferrer">
                 {part}
               </a>
             </span>
           )
         )}
-      </p>
+      </>
     );
   };
 
   const textStyle = {
-    fontSize: '34px',
+    fontSize: '22px',
     fontWeight: 'bold',
-    color: 'darkslategray',
+    color: '#2a2450',
   };
 
   return (
     <div
-      className={`grid-row ${isTextOnLeft ? 'text-left' : 'text-right'}`}
+      className={`grid-row`}
       style={{ backgroundColor, width: '100%' }}
     >
       <div className={`grid-text`} ref={elementRef} style={textStyle}>
         {renderFormattedText()}
+              <button className="initiative-link-button" onClick={() => window.open(link, '_blank')}>
+                Visit Website
+              </button>
       </div>
       <div className={`grid-image`} ref={elementRef} style={{ width: '100%' }}>
         <a href={link} target="_blank" rel="noopener noreferrer">

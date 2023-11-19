@@ -24,6 +24,11 @@ h3 {
   font-size: 1.5em;
 }
 
+h4 {
+  color: #002c66;
+  font-size: 1.25em;
+}
+
 p {
   margin-top: 0.75em;
   margin-bottom: 0.5em;
@@ -872,19 +877,18 @@ blockquote {
 .grid-text {
   padding: 5px;
   width: 550px;
-  height: 500px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
   font-weight: bold;
+  margin-left: 20px;
 
-  transition: opacity 0.5s ease-in-out;
 }
 
 .grid-text p {
   margin: 20px 70px;
-  font-size: 34px;
+  font-size: 28px;
   font-weight: bold;
   justify-content: center;
 }
@@ -892,20 +896,46 @@ blockquote {
 .grid-text a {
   display: block;
   margin-top: 10px;
-  color: darkslategray;
+  margin-left: 20px;
+  color: #090053;
   font-size: 34px;
 }
 
 .grid-image img {
-  width: 700px;
-  height: 600px;
+  width: 670px;
+  height: 450px;
+  margin-bottom: 0%;
   background-color: lightcyan;
-  transition: opacity 0.5s ease-in-out;
+  border: lightcyan;
 }
 
+.initiative-link-button {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  background-color: #090053;
+  color: white;
+  box-shadow: #276272;
+  margin-left: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.initiative-link-button:hover {
+  background-color: #457fa0;
+}
+.relax-page {
+ /*background: linear-gradient( #F5C5CC, #6C6A91, #002C66);*/
+ background-image: url("C:\Users\user\mental-health\MentalHealthMERN-4\Frontend\src\images\in8.jpeg");
+}
 .iframe-container {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 100%;
   padding-bottom: 56.25%;
   overflow: hidden;
@@ -925,16 +955,20 @@ blockquote {
   padding: 10px;
 }
 
+
 .video-list {
   display: flex;
   overflow-x: scroll;
   gap: 10px;
+  bottom: 100px;
 }
 
 .video-card {
   width: 500px;
-  height: 400px;
+  height: 300px;
   border: none;
+  margin-top: 20px;
+  margin-bottom: 80px;
   padding: 10px;
   text-align: center;
   font-size: 10px;
@@ -961,6 +995,7 @@ blockquote {
   width: 250px;
   border: 1px solid #ccc;
   border-radius: 10px;
+  margin-top: 45px;
   padding: 10px;
   transition: transform 0.3s ease-in-out;
   flex: 0 0 auto;
@@ -969,6 +1004,7 @@ blockquote {
 
 .resource-card img {
   width: 100%;
+  height: 250px;
   border-radius: 5px;
 }
 

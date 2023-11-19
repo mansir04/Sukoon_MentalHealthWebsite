@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 
-const CalmingVideosSlider = () => {
-  const [videos, setVideos] = useState([]);
+const SleepStories = () => {
+  const [videoList, setVideoList] = useState([]);
 
   useEffect(() => {
-    const fetchVideos = async () => {
+    const fetchVideosData = async () => {
       try {
-        const apiKey = 'AIzaSyDuWSva2fdNUgxPP_T4ekzvN0vv9-jdyrk';
-        const playlistId = 'PLQ_PIlf6OzqKdBTuABBCzazB4i732pNTa';
+        const youtubeApiKey = 'AIzaSyDuWSva2fdNUgxPP_T4ekzvN0vv9-jdyrk';
+        const playlistId = 'PLZoDGrriQgsLsklfcYf0U0FgHBWzJrfAI';
         const maxResults = 20;
 
         const response = await fetch(
-          `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=${maxResults}&key=${apiKey}`
+          `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=${maxResults}&key=${youtubeApiKey}`
         );
 
         if (!response.ok) {
@@ -20,26 +20,26 @@ const CalmingVideosSlider = () => {
         }
 
         const data = await response.json();
-        const videoItems = data.items.map(item => ({
+        const videos = data.items.map(item => ({
           id: item.snippet.resourceId.videoId,
           title: item.snippet.title,
           thumbnail: item.snippet.thumbnails.default.url,
         }));
 
-        setVideos(videoItems);
+        setVideoList(videos);
       } catch (error) {
         console.error('Error fetching videos:', error);
       }
     };
 
-    fetchVideos();
+    fetchVideosData();
   }, []);
 
   return (
     <div className="calming-videos-slider">
-      <h2>Calming Videos</h2>
+      <h2>SleepTime Stories</h2>
       <div className="video-list">
-        {videos.map(video => (
+        {videoList.map(video => (
           <div key={video.id} className="video-card" data-title={video.title}>
             <iframe
               width="500px"
@@ -56,4 +56,4 @@ const CalmingVideosSlider = () => {
   );
 };
 
-export default CalmingVideosSlider;
+export default SleepStories;
