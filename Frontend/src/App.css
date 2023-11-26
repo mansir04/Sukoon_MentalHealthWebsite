@@ -289,8 +289,7 @@ button span {
 
 .random-joke-header {
   margin-top: 70px;
-  background-image: "./images/jokebg291.jpeg";
-  background-image: url("./images/jokebg291.jpeg");
+  background-image: url("./images/jokebg.jpeg");
   padding: 30px; /* Increased padding for more height */
   color: black;
   display: flex;
@@ -400,7 +399,7 @@ blockquote {
   width: 100%;
   margin-top: 3.5em;
   margin-bottom: 3.5em;
-  background-image: url("./images/memeimg3.jpeg");
+  background-image: url("./images/memeimg.jpeg");
   background-size: 100%;
 }
 
@@ -806,7 +805,7 @@ blockquote {
   width: 100%;
   min-height: calc(100vh - 80px);
   height: auto;
-  background-image: url("./images/in12.jpg");
+  background-image: url("./images/blogsbg-min.jpg");
   display: flex;
   flex-direction: column;
   height: 70%;
@@ -913,7 +912,7 @@ blockquote {
 
 /* Relax Page */
 .relax-page {
-  background-image: url("./images/in4.jpeg");
+  background-image: url("./images/relaxpagebg-min.jpeg");
 }
 .iframe-container {
   position: relative;
@@ -1297,7 +1296,6 @@ button[type="submit"]:hover {
 .support-groups {
   text-align: center;
   padding: 40px 0;
-  background-image: url(".\images\in8.jpeg");
 }
 
 .groups-slider {
