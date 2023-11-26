@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import {OcdResult} from "../components/QuizResult";
-import ".././App.css";
 
 function OcdQuiz() {
 
@@ -39,7 +38,6 @@ function OcdQuiz() {
       question: "Do you have thoughts of needing to repeat words or phrases?",
       answers: ["Never", "Rarely", "Sometimes", "Often", "Always"],
     }
-    // Add more questions here...
   ];
   const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -80,8 +78,6 @@ function OcdQuiz() {
       
       // Hide the submit button
       document.getElementById("submit-button").style.display = "block;";
-      
-      // You can add any other logic you need here
     };
     
   }; 

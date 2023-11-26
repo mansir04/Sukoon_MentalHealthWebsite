@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-//import '../App.css';
 
 const Psychosis = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -8,8 +7,6 @@ const Psychosis = () => {
     'https://pbs.twimg.com/media/EYTyL8hWsAAjjXv.jpg',
     'https://www.thelancet.com/cms/attachment/7900fe1c-85b6-45bd-a034-4e2622528b34/gr1.jpg',
     
-    
-    // Add more image URLs as needed
   ];
 
   const nextImage = () => {
@@ -24,7 +21,6 @@ const Psychosis = () => {
     <div className="mental-illness-page">
       <h2>Psychosis</h2>
 
-      {/* Image container */}
       <div className="image-container">
         <button className="arrow-button prev-button" onClick={previousImage}>
           &larr;

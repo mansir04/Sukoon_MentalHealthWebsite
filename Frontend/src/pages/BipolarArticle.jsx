@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
-//import '../App.css';
 
 const BipolarArticle = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
-  // Define an array of image sources
   const images = [
     'https://www.cdc.gov/childrensmentalhealth/images/Depression-Anxiety-Behavior-Disorders-chart.jpg?_=03418',
     'https://assets.weforum.org/editor/ZM8M512ZI2ZMZagSB3MwmmX1URuwvccSy5ISTECukwo.PNG',
-    
-    // Add more image URLs here
   ];
 
   const nextImage = () => {
@@ -23,8 +19,6 @@ const BipolarArticle = () => {
   return (
     <div className="mental-illness-page">
       <h2>Bipolar Affective Disorder</h2>
-
-      {/* Image container */}
       <div className="image-container">
         <button className="arrow-button prev-button" onClick={previousImage}>
           &larr;

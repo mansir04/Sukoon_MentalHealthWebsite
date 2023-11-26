@@ -1,6 +1,5 @@
 import React from 'react';
 import MentalHealthInitiative from './MentalHealthInitiative';
-import '../App.css'; 
 
 const initiatives = [
   {

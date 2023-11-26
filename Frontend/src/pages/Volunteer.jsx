@@ -1,7 +1,4 @@
-// AboutUs.js
-
 import React from 'react';
-// import './App.css';
 
 const founders = [
   {
@@ -26,9 +23,6 @@ const founders = [
     role: 'Front-end & Back-end Team',
     image: 'https://i.pinimg.com/564x/c3/0d/06/c30d0644771cbcb628019836ed319afc.jpg', // Replace with actual image file
   },
-
-
-  // Add more founding members as needed
 ];
 
 const Volunteer = () => {

@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
-//import '../App.css';
 
 const Schizophrenia = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
-  // Define an array of image sources
   const images = [
     'https://media.springernature.com/m685/springer-static/image/art%3A10.1038%2Fs41537-020-0102-z/MediaObjects/41537_2020_102_Fig1_HTML.png',
     'https://www.analysisgroup.com/globalassets/uploadedimages/content/insights/ag_features/health_care_bulletin/bulletin_fall_2016/economic_burden_of_schizophrenia_in_the_us_exceeded_$155_billion_in_2013/schizophrenia_graph.gif',
-    
-    // Add more image URLs here
   ];
 
   const nextImage = () => {
@@ -24,7 +20,6 @@ const Schizophrenia = () => {
     <div className="mental-illness-page">
       <h2>Schizophrenia</h2>
 
-      {/* Image container */}
       <div className="image-container">
         <button className="arrow-button prev-button" onClick={previousImage}>
           &larr;

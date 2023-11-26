@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
-// import './App.css';
 
 const Anxiety = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
-  // Define an array of image sources
   const images = [
     'https://www.cdc.gov/childrensmentalhealth/images/Depression-Anxiety-Behavior-Disorders-chart.jpg?_=03418',
     'https://assets.weforum.org/editor/ZM8M512ZI2ZMZagSB3MwmmX1URuwvccSy5ISTECukwo.PNG',
-    
-    // Add more image URLs here
   ];
 
   const nextImage = () => {
@@ -24,7 +20,6 @@ const Anxiety = () => {
     <div className="mental-illness-page">
       <h2>Anxiety Disorder</h2>
 
-      {/* Image container */}
       <div className="image-container">
         <button className="arrow-button prev-button" onClick={previousImage}>
           &larr;
@@ -65,7 +60,6 @@ const Anxiety = () => {
 
     <p>If you or someone you know is struggling with anxiety or phobias, seeking professional help from a mental health provider is important. These conditions are treatable, and with the right support, individuals can learn effective strategies for managing their symptoms and improving their overall quality of life.</p>
       
-      {/* Add more detailed content here */}
       </div>
   );
 };

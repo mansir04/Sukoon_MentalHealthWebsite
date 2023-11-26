@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import '../App.css';
 
 const CalmingVideosSlider = () => {
   const [videos, setVideos] = useState([]);
@@ -7,7 +6,7 @@ const CalmingVideosSlider = () => {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const apiKey = 'AIzaSyApVeK3cmd63M7u-bh1MCKm-UwXRHfoQec';/*Add your own APIKey*/ 
+        const apiKey = 'AIzaSyApVeK3cmd63M7u-bh1MCKm-UwXRHfoQec'; /*Add your own APIKey*/ 
         const playlistId = 'PLQ_PIlf6OzqKdBTuABBCzazB4i732pNTa';
         const maxResults = 20;
 

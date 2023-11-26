@@ -6,8 +6,6 @@ const Ocd = () => {
   const images = [
     'https://www.therecoveryvillage.com/wp-content/uploads/2022/04/1-OCD-Statistics.webp',
     'https://www.kff.org/wp-content/uploads/2023/03/share-of-adults-reporting-symptoms-of-anxiety-and-or-depressive-disorder-february-2023-Feature-image-v2-2.png',
-    
-    // Add more image URLs as needed
   ];
 
   const nextImage = () => {
@@ -22,7 +20,6 @@ const Ocd = () => {
     <div className="mental-illness-page">
       <h2>Obsessive-Compulsive Disorder (OCD)</h2>
 
-      {/* Image container */}
       <div className="image-container">
         <button className="arrow-button prev-button" onClick={previousImage}>
           &larr;
@@ -77,11 +74,6 @@ const Ocd = () => {
         is crucial for accurate diagnosis and appropriate treatment planning. Early intervention can significantly improve
         the prognosis for individuals with OCD, allowing them to better manage their symptoms and improve their quality of
         life.</p>
-
-
-
-      
-      {/* Add more detailed content here */}
       </div>
   );
 };

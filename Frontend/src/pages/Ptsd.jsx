@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-//import '../App.css';
 
 const Ptsd = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -8,8 +7,6 @@ const Ptsd = () => {
     'https://cfah.org/wp-content/uploads/2022/05/Type-of-Traumas-cause-PTSD.jpg?_t=1665690466',
     'https://cfah.org/wp-content/uploads/2022/05/PTSD-between-general-population-and-trauma-victims.jpg?_t=1665690993',
    ' https://static.cambridge.org/binary/version/id/urn:cambridge.org:id:binary:20180530082546439-0195:S0007125000245145:S0007125000245145_fig1g.jpeg?pub-status=live',
-    
-    // Add more image URLs as needed
   ];
 
   const nextImage = () => {
@@ -24,7 +21,6 @@ const Ptsd = () => {
     <div className="mental-illness-page">
       <h2>Post-traumatic Stress Disorder (PTSD)</h2>
 
-      {/* Image container */}
       <div className="image-container">
         <button className="arrow-button prev-button" onClick={previousImage}>
           &larr;

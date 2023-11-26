@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-//import '../App.css';
 
 const PanicDisorder = () => {
   const [currentImage, setCurrentImage] = useState(0);
@@ -7,8 +6,6 @@ const PanicDisorder = () => {
   const images = [
     'https://www.researchgate.net/publication/51752088/figure/fig1/AS:601662263672849@1520458870968/Prevalence-of-Diagnostic-and-Statistical-Manual-of-Mental-Disorders-Revised-Third.png',
     'https://cdn.koreabiomed.com/news/photo/201703/310_298_3359.jpg',
-    
-    // Add more image URLs as needed
   ];
 
   const nextImage = () => {
@@ -23,7 +20,6 @@ const PanicDisorder = () => {
     <div className="mental-illness-page">
       <h2>Panic Disorder</h2>
 
-      {/* Image container */}
       <div className="image-container">
         <button className="arrow-button prev-button" onClick={previousImage}>
           &larr;
@@ -82,10 +78,6 @@ const PanicDisorder = () => {
         or psychiatrist, is crucial. They can assess the severity of the condition and develop a personalized treatment plan to address the
         specific needs and challenges associated with panic disorder. With appropriate treatment and support, individuals with panic disorder
         can experience significant relief from their symptoms and an improved quality of life.</p>
-
-
-      
-      {/* Add more detailed content here */}
       </div>
   );
 };

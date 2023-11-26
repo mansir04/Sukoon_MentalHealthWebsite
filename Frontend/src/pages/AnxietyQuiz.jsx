@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import {AnxietyResult} from "../components/QuizResult";
-import ".././App.css";
 
 const AnxietyQuiz = () => {
   const [questions, setQuestions] = useState([
@@ -61,7 +60,7 @@ const AnxietyQuiz = () => {
   };
 
   const updateScore = () => {
-    const answerValue = clickedOption; // Use the clicked option as the answer value
+    const answerValue = clickedOption; 
 
     setScore((prevScore) => prevScore + answerValue);
   };
@@ -76,16 +75,13 @@ const AnxietyQuiz = () => {
   const isQuizOver = currentQuestion === questions.length;
   const handleSubmit = () => {
     const handleSubmit = () => {
-      // Calculate the score based on the selected options
+
       const answerValue = clickedOption;
       
-      // Add the score for the current question
       setScore((prevScore) => prevScore + answerValue);
       
-      // Hide the submit button
       document.getElementById("submit-button").style.display = "block;";
       
-      // You can add any other logic you need here
     };
     
   }; 

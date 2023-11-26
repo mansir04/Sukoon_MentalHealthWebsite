@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getDocs, collection, deleteDoc, doc } from "firebase/firestore";
 import { auth, db } from "../components/firebase-config";
-import { Link } from "react-router-dom";
-import { signOut } from "firebase/auth";
 
 function Blogs({ isAuth }) {
   const [postLists, setPostList] = useState([]);
