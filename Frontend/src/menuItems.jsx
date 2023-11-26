@@ -62,7 +62,7 @@ const getMenuItems = () => {
       title: 'Contact',
       submenu: [
         {
-          title: 'Volunteer',
+          title: 'About Us',
           url: 'volunteer',
         },
         {

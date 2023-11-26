@@ -24,6 +24,11 @@ h3 {
   font-size: 1.5em;
 }
 
+h4 {
+  color: #002c66;
+  font-size: 1.25em;
+}
+
 p {
   margin-top: 0.75em;
   margin-bottom: 0.5em;
@@ -504,7 +509,6 @@ blockquote {
   flex-wrap: nowrap;
   margin: 10px;
   overflow: hidden;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   max-width: none;
   width: 100%;
@@ -545,6 +549,7 @@ blockquote {
 .Quiz .card-content button:hover {
   transform: scale(1.1);
   box-shadow: 4px 4px 6px rgba(215, 66, 66, 0.4);
+  cursor: alias;
 }
 
 .Quiz .card-content h2 {
@@ -801,8 +806,10 @@ blockquote {
   width: 100%;
   min-height: calc(100vh - 80px);
   height: auto;
+  background-image: url("./images/in12.jpg");
   display: flex;
   flex-direction: column;
+  height: 70%;
   align-items: center;
   padding-top: 20px;
 }
@@ -872,19 +879,18 @@ blockquote {
 .grid-text {
   padding: 5px;
   width: 550px;
-  height: 500px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: 60px;
+  margin-top: 60px;
 
-  font-weight: bold;
-
-  transition: opacity 0.5s ease-in-out;
 }
 
 .grid-text p {
   margin: 20px 70px;
-  font-size: 34px;
+  font-size: 28px;
   font-weight: bold;
   justify-content: center;
 }
@@ -892,20 +898,26 @@ blockquote {
 .grid-text a {
   display: block;
   margin-top: 10px;
-  color: darkslategray;
+  margin-left: 20px;
+  color: #090053;
   font-size: 34px;
 }
 
 .grid-image img {
-  width: 700px;
-  height: 600px;
+  width: 670px;
+  height: 460px;
+  margin-bottom: 0%;
   background-color: lightcyan;
-  transition: opacity 0.5s ease-in-out;
+  border: lightcyan;
 }
 
+.relax-page {
+ /*background: linear-gradient( #F5C5CC, #6C6A91, #002C66);*/
+ background-image: url("./images/in4.jpeg");
+}
 .iframe-container {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 100%;
   padding-bottom: 56.25%;
   overflow: hidden;
@@ -925,16 +937,20 @@ blockquote {
   padding: 10px;
 }
 
+
 .video-list {
   display: flex;
   overflow-x: scroll;
   gap: 10px;
+  bottom: 100px;
 }
 
 .video-card {
   width: 500px;
-  height: 400px;
+  height: 300px;
   border: none;
+  margin-top: 20px;
+  margin-bottom: 80px;
   padding: 10px;
   text-align: center;
   font-size: 10px;
@@ -961,6 +977,7 @@ blockquote {
   width: 250px;
   border: 1px solid #ccc;
   border-radius: 10px;
+  margin-top: 45px;
   padding: 10px;
   transition: transform 0.3s ease-in-out;
   flex: 0 0 auto;
@@ -969,6 +986,7 @@ blockquote {
 
 .resource-card img {
   width: 100%;
+  height: 250px;
   border-radius: 5px;
 }
 
@@ -1208,23 +1226,25 @@ button[type="submit"]:hover {
   border-radius: 10px;
   overflow: hidden;
   background-color: #fff;
+  padding: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-item img {
   width: 100%;
-  height: auto;
+  height: 300px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 
-.carousel-content {
+.carousel-item h2 {
   padding: 20px;
 }
 
 .carousel-item p {
+  margin-top: 10px;
   margin-bottom: 15px;
-  color: #666;
+  color: #666; 
 }
 
 .read-more {
@@ -1277,7 +1297,7 @@ button[type="submit"]:hover {
 .support-groups {
   text-align: center;
   padding: 40px 0;
-  background-color: #ffffff; /* White background */
+  background-image: url(".\images\in8.jpeg");
 }
 
 .groups-slider {

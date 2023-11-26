@@ -9,22 +9,22 @@ const contentData = [
     imageSrc:
     image1,
     title: "Who We Are",
-    text: "In recent years, there has been increasing acknowledgement of the important role mental health plays in achieving global development goals.",
-    link: "https://www.who.int/health-topics/mental-health#tab=tab_1",
+    text: "Discover more about our organization and learn about our mission and initiatives to make a positive impact on mental health and well-being.",
+    link: "/Volunteer",
   },
   {
     imageSrc:
       image2,
     title: "Take Our Diagnostic Quizzes",
-    text: "WHO works with Member States and partners to improve the mental health of individuals and society at large.",
-    link: "https://www.who.int/health-topics/mental-health#tab=tab_3",
+    text: "Discover our diagnostic quizzes designed to help you evaluate your mental well-being. Take a moment to explore and gain insights into your mental health.",
+    link: "/Quiz",
   },
   {
     imageSrc:
       image3,
     title: "Mental Disorders",
-    text: "In 2019, 1 in every 8 people, or 970 million people around the world were living with a mental disorder.",
-    link: "https://who.int/news-room/fact-sheets/detail/mental-disorders",
+    text: "Discover valuable insights into mental disorders and their impact on individuals and society. Explore our dedicated page to learn more about mental health challenges and ways to address them.",
+    link: "/Articles",
   },
 ];
 
@@ -65,7 +65,6 @@ function Home_info() {
                 <p>{content.text}</p>
                 <a
                   href={content.link}
-                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   Learn more

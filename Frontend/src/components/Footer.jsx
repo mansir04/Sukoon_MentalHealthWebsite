@@ -7,10 +7,10 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-links">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Resources</a>
-          <a href="#">Contact</a>
+          <a href="/Home">Home</a>
+          <a href="Volunteer">About</a>
+          <a href="Articles">Resources</a>
+          <a href="ContactUs">Contact</a>
         </div>
         <div className="footer-copyright">
           &copy; {currentYear} SUKOON. All rights reserved.
