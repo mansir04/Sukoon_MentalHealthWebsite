@@ -11,9 +11,9 @@ const MentalHealthInitiative = ({ text, image, link, isTextOnLeft, backgroundCol
           index % 2 === 0 ? (
             <span key={index}>{part}</span>
           ) : (
-            <span key={index} style={{ fontStyle: 'italic' }}>
+            <span key={index} style={{ fontWeight: 'bold', marginLeft: '-20px', marginBottom: '40px'}}>
               <a href={link} target="_blank" rel="noopener noreferrer">
-                {part}
+                {part} <span role="img" aria-label="link icon" style={{ fontSize: '20px' }}>🔗</span>
               </a>
             </span>
           )
@@ -23,21 +23,14 @@ const MentalHealthInitiative = ({ text, image, link, isTextOnLeft, backgroundCol
   };
 
   const textStyle = {
-    fontSize: '22px',
-    fontWeight: 'bold',
+    fontSize: '18px',
     color: '#2a2450',
   };
 
   return (
-    <div
-      className={`grid-row`}
-      style={{ backgroundColor, width: '100%' }}
-    >
+    <div className={`grid-row`} style={{ backgroundColor, width: '100%' }}>
       <div className={`grid-text`} ref={elementRef} style={textStyle}>
         {renderFormattedText()}
-              <button className="initiative-link-button" onClick={() => window.open(link, '_blank')}>
-                Visit Website
-              </button>
       </div>
       <div className={`grid-image`} ref={elementRef} style={{ width: '100%' }}>
         <a href={link} target="_blank" rel="noopener noreferrer">

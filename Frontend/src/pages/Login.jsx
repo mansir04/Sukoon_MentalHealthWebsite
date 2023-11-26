@@ -1,17 +1,23 @@
 import React from "react";
-import { auth, db } from "../components/firebase-config";
-import { signInWithPopup } from "firebase/auth";
+import { auth } from "../components/firebase-config";
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
 function Login({ setIsAuth }) {
   let navigate = useNavigate();
+  const provider = new GoogleAuthProvider();
 
   const signInWithGoogle = () => {
-    signInWithPopup(auth, provider).then((result) => {
-      localStorage.setItem("isAuth", true);
-      setIsAuth(true);
-      navigate("/");
-    });
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        localStorage.setItem("isAuth", true);
+        setIsAuth(true);
+        navigate("/");
+      })
+      .catch((error) => {
+        // Handle sign-in errors here
+        console.error("Error signing in with Google:", error);
+      });
   };
 
   return (

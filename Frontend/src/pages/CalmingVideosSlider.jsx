@@ -7,7 +7,7 @@ const CalmingVideosSlider = () => {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const apiKey = 'AIzaSyDuWSva2fdNUgxPP_T4ekzvN0vv9-jdyrk';
+        const apiKey = 'AIzaSyApVeK3cmd63M7u-bh1MCKm-UwXRHfoQec';/*Add your own APIKey*/ 
         const playlistId = 'PLQ_PIlf6OzqKdBTuABBCzazB4i732pNTa';
         const maxResults = 20;
 

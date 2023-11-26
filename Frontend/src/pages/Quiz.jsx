@@ -37,7 +37,7 @@ const Quiz = () => {
             <div className="card-content">
               <h2>Depression Test</h2>
               <p>
-                 our quiz can help you detect early signs of Depression
+                 Our quiz can help you detect early signs of Depression
               </p>
               <button><Link to="/depression-quiz">Take Quiz</Link></button>
             </div>
