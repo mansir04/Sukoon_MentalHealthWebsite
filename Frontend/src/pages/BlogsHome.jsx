@@ -14,12 +14,11 @@ function Blogs({ isAuth }) {
   };
 
   const backgroundColors = [
+    "#fcf4dd", 
+    "#ddedea",
     "#e8dff5", 
     "#fce1e4", 
-    "#fcf4dd", 
-    "#ddedea", 
     "#daeaf6", 
-
   ];
 
   useEffect(() => {
