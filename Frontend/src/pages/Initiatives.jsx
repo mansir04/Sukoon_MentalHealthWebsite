@@ -51,6 +51,7 @@ const Initiatives = () => {
           key={index}
           text={initiative.text}
           image={initiative.image}
+          alt={initiative.text} 
           link={initiative.link}
           backgroundColor={backgroundColors[index % backgroundColors.length]}
         />
