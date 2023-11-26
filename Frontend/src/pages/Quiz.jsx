@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '.././App.css';
-import quiz1Image from '../images/AnxietyQuiz.png';
-import quiz2Image from '../images/DepressionQuiz.png';
-import quiz3Image from '../images/OCDQuiz.png';
-import quiz4Image from '../images/ADHDQuiz.png';
+
+import quiz1Image from '../images/AnxietyQuiz-min.png';
+import quiz2Image from '../images/DepressionQuiz-min.png';
+import quiz3Image from '../images/OCDQuiz-min.png';
+import quiz4Image from '../images/ADHDQuiz-min.png';
 
 const Quiz = () => {
   return (
