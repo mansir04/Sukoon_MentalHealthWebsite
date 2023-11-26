@@ -6,15 +6,13 @@ import getMenuItems from "../menuItems";
 import "../App.css";
 
 const Navbar = () => {
-  // Call the getMenuItems function to get the menu items
+
   const menuItems = getMenuItems();
 
-  // Initialize state to manage the authentication status
-  const [isAuth, setIsAuth] = useState(false); // Initialize as false initially
+  const [isAuth, setIsAuth] = useState(false); 
 
-  // Function to handle the Log Out click event
   const handleLogOutClick = () => {
-    // Perform the logout logic
+    
     signOut(auth).then(() => {
       setIsAuth(false); // Update the authentication state to false
       localStorage.clear();

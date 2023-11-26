@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { signOut } from "firebase/auth";
 import { auth } from "./components/firebase-config";
 
-//import { auth } from "./firebase-config";
-
 const getMenuItems = () => {
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
 
@@ -62,7 +60,7 @@ const getMenuItems = () => {
       title: 'Contact',
       submenu: [
         {
-          title: 'Volunteer',
+          title: 'About Us',
           url: 'volunteer',
         },
         {

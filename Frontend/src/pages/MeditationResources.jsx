@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css';
 
 const MeditationResources = () => {
   const resources = [
@@ -37,13 +36,13 @@ const MeditationResources = () => {
       type: 'article',
       title: '8 Simple Exercises for Stress Relief',
       link: 'https://www.everydayhealth.com/exercise-photos/exercises-that-relieve-stress.aspx',
-      gifLink: 'https://cdnl.iconscout.com/lottie/premium/thumb/plank-pose-yoga-5445987-4562622.gif',
+      gifLink: 'https://d2f8l4t0zpiyim.cloudfront.net/000_clients/61768/page/61768yYxIEAka.gif',
     },
     {
       type: 'article',
       title: ' How Yoga Boosts Your Mental Health',
       link: 'https://www.houstonmethodist.org/blog/articles/2021/sep/the-benefits-of-yoga-how-it-boosts-your-mental-health/',
-      gifLink: 'https://i.gifer.com/origin/de/dead4451310b3e6053cc6c736dfc6b43_w200.gif',
+      gifLink: 'https://media4.giphy.com/media/KDICL3psaxnoeUghMt/giphy.gif?cid=6c09b9525f4v3rtu08oa8spjfefqfmvdbxvlwsnvdzj8h5a1&ep=v1_stickers_related&rid=giphy.gif&ct=s',
     },
     {
       type: 'article',
@@ -67,7 +66,7 @@ const MeditationResources = () => {
           <div key={resource.link} className="resource-card" resource-title={resource.title}>
             <a href={resource.link} target="_blank" rel="noopener noreferrer">
               <img src={resource.gifLink} alt={resource.title} />
-              <h3>{resource.title}</h3>
+              <h4>{resource.title}</h4>
             </a>
           </div>
         ))}

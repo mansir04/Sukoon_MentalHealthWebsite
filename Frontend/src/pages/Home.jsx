@@ -31,7 +31,8 @@ const Home = () => {
         <div className='home-allcontent'>
 
         <div className='home-project-intro-image'>
-          <img src={img1}></img>
+          <img src={img1} alt='Sukoon: Embrace, Empower, Elevate' ></img>
+          
         </div>
 
         <div className='home-project-intro-quote'>

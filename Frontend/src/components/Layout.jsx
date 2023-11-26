@@ -10,7 +10,6 @@ const Layout = () => {
         <Outlet />
       </div>
       <div className="footer-at-bottom">
-        {/* Your main content */}
         <Footer />
       </div>
     </div>

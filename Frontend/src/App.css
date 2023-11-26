@@ -24,6 +24,11 @@ h3 {
   font-size: 1.5em;
 }
 
+h4 {
+  color: #002c66;
+  font-size: 1.25em;
+}
+
 p {
   margin-top: 0.75em;
   margin-bottom: 0.5em;
@@ -504,7 +509,6 @@ blockquote {
   flex-wrap: nowrap;
   margin: 10px;
   overflow: hidden;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   max-width: none;
   width: 100%;
@@ -545,6 +549,7 @@ blockquote {
 .Quiz .card-content button:hover {
   transform: scale(1.1);
   box-shadow: 4px 4px 6px rgba(215, 66, 66, 0.4);
+  cursor: alias;
 }
 
 .Quiz .card-content h2 {
@@ -801,8 +806,10 @@ blockquote {
   width: 100%;
   min-height: calc(100vh - 80px);
   height: auto;
+  background-image: url("./images/in12.jpg");
   display: flex;
   flex-direction: column;
+  height: 70%;
   align-items: center;
   padding-top: 20px;
 }
@@ -856,6 +863,7 @@ blockquote {
   color: #000000;
 }
 
+/* Initiatives Page */
 .initiatives-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -872,19 +880,17 @@ blockquote {
 .grid-text {
   padding: 5px;
   width: 550px;
-  height: 500px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
-  font-weight: bold;
-
-  transition: opacity 0.5s ease-in-out;
+  margin-left: 60px;
+  margin-top: 60px;
 }
 
 .grid-text p {
   margin: 20px 70px;
-  font-size: 34px;
+  font-size: 28px;
   font-weight: bold;
   justify-content: center;
 }
@@ -892,20 +898,26 @@ blockquote {
 .grid-text a {
   display: block;
   margin-top: 10px;
-  color: darkslategray;
+  margin-left: 20px;
+  color: #090053;
   font-size: 34px;
 }
 
 .grid-image img {
-  width: 700px;
-  height: 600px;
+  width: 670px;
+  height: 460px;
+  margin-bottom: 0%;
   background-color: lightcyan;
-  transition: opacity 0.5s ease-in-out;
+  border: lightcyan;
 }
 
+/* Relax Page */
+.relax-page {
+  background-image: url("./images/in4.jpeg");
+}
 .iframe-container {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 100%;
   padding-bottom: 56.25%;
   overflow: hidden;
@@ -929,12 +941,15 @@ blockquote {
   display: flex;
   overflow-x: scroll;
   gap: 10px;
+  bottom: 100px;
 }
 
 .video-card {
   width: 500px;
-  height: 400px;
+  height: 300px;
   border: none;
+  margin-top: 20px;
+  margin-bottom: 80px;
   padding: 10px;
   text-align: center;
   font-size: 10px;
@@ -961,6 +976,7 @@ blockquote {
   width: 250px;
   border: 1px solid #ccc;
   border-radius: 10px;
+  margin-top: 45px;
   padding: 10px;
   transition: transform 0.3s ease-in-out;
   flex: 0 0 auto;
@@ -969,6 +985,7 @@ blockquote {
 
 .resource-card img {
   width: 100%;
+  height: 250px;
   border-radius: 5px;
 }
 
@@ -978,94 +995,6 @@ blockquote {
 
 .resource-slider::-webkit-scrollbar {
   display: none;
-}
-
-.mental-illness-page {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  color: #333;
-}
-
-.mental-illness-page p {
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.mental-illness-page ul {
-  list-style: disc;
-  margin-left: 20px;
-}
-
-.mental-illness-page li {
-  margin-bottom: 10px;
-}
-
-.mental-illness-page a {
-  color: #007bff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.mental-illness-page a:hover {
-  color: #0056b3;
-}
-
-.mental-illness-page img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  float: left;
-  margin-right: 20px;
-}
-
-.arrow-button {
-  width: 50px;
-  height: 50px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  font-size: 24px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.arrow-button:hover {
-  background-color: #0056b3;
-  transform: scale(1.1);
-}
-
-.prev-button {
-  float: left;
-}
-
-.next-button {
-  float: right;
-}
-
-.image-container {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  overflow: hidden;
-  text-align: center;
-}
-
-.large-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
 }
 
 /*contact us */
@@ -1192,7 +1121,7 @@ button[type="submit"]:hover {
   animation-delay: 0.2s; /* Delay the animation slightly */
 }
 
-/* Mental Health Carousel styles */
+/* Mental Health Carousel styles (Articles Main Page) */
 
 .carousel {
   display: grid;
@@ -1208,21 +1137,23 @@ button[type="submit"]:hover {
   border-radius: 10px;
   overflow: hidden;
   background-color: #fff;
+  padding: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-item img {
   width: 100%;
-  height: auto;
+  height: 300px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 
-.carousel-content {
+.carousel-item h2 {
   padding: 20px;
 }
 
 .carousel-item p {
+  margin-top: 10px;
   margin-bottom: 15px;
   color: #666;
 }
@@ -1242,7 +1173,95 @@ button[type="submit"]:hover {
   background-color: #aab3bc;
 }
 
-/* Mental illness page styles */
+/* Mental illness page styles (information articles)*/
+.mental-illness-page {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.mental-illness-page p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.mental-illness-page ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.mental-illness-page li {
+  margin-bottom: 10px;
+}
+
+.mental-illness-page a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.mental-illness-page a:hover {
+  color: #0056b3;
+}
+
+.mental-illness-page img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  float: left;
+  margin-right: 20px;
+}
+
+.arrow-button {
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.arrow-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.prev-button {
+  float: left;
+}
+
+.next-button {
+  float: right;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.large-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 .mental-illness-page {
   max-width: 800px;
   margin: 20px auto;
@@ -1274,10 +1293,11 @@ button[type="submit"]:hover {
   border: none;
 }
 
+/* support groups */
 .support-groups {
   text-align: center;
   padding: 40px 0;
-  background-color: #ffffff; /* White background */
+  background-image: url(".\images\in8.jpeg");
 }
 
 .groups-slider {

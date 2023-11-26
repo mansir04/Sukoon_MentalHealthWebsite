@@ -86,8 +86,7 @@ const DepressionQuiz = () => {
       
       // Hide the submit button
       document.getElementById("submit-button").style.display = "block;";
-      
-      // You can add any other logic you need here
+
     };
     
   }; 

@@ -18,7 +18,7 @@ const Quiz = () => {
         </center>
 
         <div className="quiz-row">
-          {/* First pair of quizzes */}
+          {/* First section of quizzes */}
           <div className="card">
             <div className="card-image">
               <img src={quiz1Image} alt="Quiz 1" />
@@ -37,7 +37,7 @@ const Quiz = () => {
             <div className="card-content">
               <h2>Depression Test</h2>
               <p>
-                 our quiz can help you detect early signs of Depression
+                 Our quiz can help you detect early signs of Depression
               </p>
               <button><Link to="/depression-quiz">Take Quiz</Link></button>
             </div>
@@ -54,7 +54,7 @@ const Quiz = () => {
             </div>
           </div>
           </div>
-
+          {/* Start of second section and end of first */}
           <div className="quiz-row">
           <div className="card">
             <div className="card-image">
@@ -89,7 +89,7 @@ const Quiz = () => {
               <button><Link to="/anxiety-quiz">Take Quiz</Link></button>
             </div>
           </div>
-          {/* End of the second pair */}
+          {/* End of the second section */}
         </div>
 
         {/* Text note at the end */}

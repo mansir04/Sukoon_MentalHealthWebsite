@@ -24,7 +24,6 @@ function MemePage() {
     { id: "pikachu-surprised", name: "Pikachu Surprised" },
     { id: "mocking-spongebob", name: "Mocking SpongeBob" },
     { id: "roll-safe", name: "Roll Safe" },
-    // Add more meme templates here
     { id: "success", name: "Success Kid" },
     { id: "tenguy", name: "10 Guy" },
     { id: "toohigh", name: "The Rent Is Too Damn High" },
@@ -38,7 +37,6 @@ function MemePage() {
     { id: "wddth", name: "We Don't Do That Here" },
     { id: "whatyear", name: "What Year Is It?" },
     { id: "winter", name: "Winter is coming" },
-
     { id: "wkh", name: "Who Killed Hannibal" },
     { id: "woman-cat", name: "Woman Yelling at a Cat" },
     { id: "wonka", name: "Condescending Wonka" },

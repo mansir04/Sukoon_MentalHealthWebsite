@@ -6,8 +6,6 @@ const Depression = () => {
   const images = [
     'https://assets-global.website-files.com/60b79f6742e9397ba3ee0357/640b4ccc0771bdf381e60449_depression%20by%20demographic-1.png',
     'https://www.cdc.gov/nchs/images/databriefs/351-400/db379-fig2.gif',
-    
-    // Add more image URLs as needed
   ];
 
   const nextImage = () => {
@@ -22,7 +20,6 @@ const Depression = () => {
     <div className="mental-illness-page">
       <h2>Depression</h2>
 
-      {/* Image container */}
       <div className="image-container">
         <button className="arrow-button prev-button" onClick={previousImage}>
           &larr;
@@ -74,11 +71,6 @@ const Depression = () => {
         condition, and with the right interventions, many individuals can experience significant improvement in their
         mental health and overall quality of life.</p>
 
-
-
-
-      
-      {/* Add more detailed content here */}
       </div>
   );
 };

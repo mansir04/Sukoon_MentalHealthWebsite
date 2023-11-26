@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-// import './App.css';
 import 'font-awesome/css/font-awesome.min.css';
 
 const ContactUs = () => {
@@ -17,8 +16,7 @@ const ContactUs = () => {
     emailjs
       .sendForm('service_j6fpbne', 'template_8qfw96m', e.target, 'ocD6sjKNO1COawjro')
       .then((result) => {
-        console.log('Email sent successfully:', result.text);
-        // You can add logic here to show a success message or reset the form.
+        alert('Email sent successfully:', result.text);
         setFormData({
           name: '',
           email: '',
@@ -26,8 +24,7 @@ const ContactUs = () => {
         });
       })
       .catch((error) => {
-        console.error('Email sending failed:', error.text);
-        // You can add logic here to show an error message to the user.
+        alert('Email sending failed:', error.text);
       });
   };
 

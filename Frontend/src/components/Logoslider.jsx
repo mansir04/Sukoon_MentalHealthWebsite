@@ -26,7 +26,7 @@ class Logoslider extends Component {
     return (
       <div className="home-logoslider-mainContainer">
         <h2>
-          <u>NGOs WE SUPPORT</u>
+          <u>NGOs We Support</u>
         </h2>
         <Slider {...settings}>
           {logos.map((logoSrc, index) => (
