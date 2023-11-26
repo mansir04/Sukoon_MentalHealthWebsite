@@ -19,6 +19,7 @@ import Psychosis from "../pages/Psychosis";
 import Initiatives from "../pages/Initiatives";
 import Quiz from "../pages/Quiz";
 import Relax from "../pages/Relax";
+
 import Memes from "../pages/Memes";
 import Volunteer from "../pages/Volunteer";
 import ContactUs from "../pages/ContactUs";
@@ -64,7 +65,8 @@ const App = () => {
           <Route path="adhd-quiz" element={<ADHDQuiz />} />
           <Route path="relax" element={<Relax />} />
           <Route path="memes" element={<Memes />} />
-          <Route path="volunteer" element={<Volunteer />} />
+         
+<Route path="volunteer" element={<Volunteer />} />
           <Route path="contact" element={<ContactUs />} />
           <Route path="sign-up" element={<SignUp />} />
           <Route path="createpost" element={<CreatePost isAuth={isAuth} />} />

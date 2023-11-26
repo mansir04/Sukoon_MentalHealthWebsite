@@ -1,8 +1,8 @@
 import React, { Component, useState, useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import image1 from "../images/home1.jpeg";
-import image2 from "../images/home2.jpeg";
-import image3 from "../images/home3.jpeg";
+import image1 from "../images/home1-min.jpeg";
+import image2 from "../images/home2-min.jpeg";
+import image3 from "../images/home3-min.jpeg";
 
 const contentData = [
   {
