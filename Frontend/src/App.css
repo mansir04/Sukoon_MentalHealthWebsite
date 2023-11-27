@@ -587,7 +587,7 @@ blockquote {
   border-radius: 15px;
   overflow: hidden;
   padding: 40px;
-  background-image: url("./images/quizbg4nov.png");
+  background-image: url("./images/quizbg-min.png");
   margin-left: 10%;
   height: 70%;
 }
@@ -688,7 +688,7 @@ blockquote {
   width: 70%;
   height: auto;
   padding: 20px;
-  background-image: url("./images/quiz1bg4nov.png");
+  background-image: url("./images/quizbg-min.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 12px;
