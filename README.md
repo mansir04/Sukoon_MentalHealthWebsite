@@ -11,9 +11,12 @@ Our website seeks to empower visitors to prioritize their mental well-being and 
 
 The foundation of this project is our unwavering belief that every individual deserves the opportunity to lead a fulfilling life. Addressing mental health is a pivotal step towards achieving this goal, and we are dedicated to making a positive impact in this regard.
 
-## Project Status
+## Project Information
 
 Please note that Sukoon is an ongoing project. Features and the technology stack may evolve as development progresses. Any updates or changes will be reflected in the README file to keep you informed.
+
+#### Update : the development of this project was started around August 2023 and finished by 1 December 2023. We no longer aim to update it as frequently as previously. 
+
 ## Tech Stack
 
 **Client:** HTML, CSS, React.Js
